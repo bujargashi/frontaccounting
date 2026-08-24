@@ -11,11 +11,10 @@ function ks_import_payment_split_enabled()
 
 function ks_import_payment_split_table_exists()
 {
-    $sql = "SELECT 1 FROM information_schema.tables
-        WHERE table_schema=DATABASE() AND table_name=".
+    $sql = "SHOW TABLES LIKE ".
         db_escape(TB_PREF.'ks_import_payment_splits');
     $res = db_query($sql);
-    return db_num_rows($res) > 0;
+    return $res && db_num_rows($res) > 0;
 }
 
 function ks_import_payment_split_defaults()
