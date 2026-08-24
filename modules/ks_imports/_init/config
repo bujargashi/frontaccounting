@@ -7,5 +7,5 @@ Homepage: https://tax.alpatec.eu/tax/
 Depends:
 Type: extension
 InstallPath: modules/ks_imports
-Filename: ks_imports-4.0.0-1
-Version: 4.0.0-1
+Filename: ks_imports-2.4.0-1
+Version: 2.4.0-1

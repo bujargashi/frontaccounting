@@ -121,7 +121,7 @@ $installed_extensions = array (
   array (
     'name' => 'Blerje nga Importi',
     'package' => 'ks_imports',
-    'version' => '4.0.0-1',
+    'version' => '2.4.0-1',
     'type' => 'extension',
     'active' => false,
     'path' => 'modules/ks_imports',
