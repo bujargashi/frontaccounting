@@ -24,6 +24,8 @@ class suppliers_app extends application
 			"purchasing/po_entry_items.php?NewGRN=Yes", 'SA_GRN', MENU_TRANSACTION);
 		$this->add_lapp_function(0, _("Direct Supplier &Invoice"),
 			"purchasing/po_entry_items.php?NewInvoice=Yes", 'SA_SUPPLIERINVOICE', MENU_TRANSACTION);
+		$this->add_lapp_function(0, _("Blerje nga Importi"),
+			"modules/ks_imports/purchase_import.php?New=1", 'SA_SUPPLIERINVOICE', MENU_TRANSACTION);
 
 		$this->add_rapp_function(0, _("&Payments to Suppliers"),
 			"purchasing/supplier_payment.php?", 'SA_SUPPLIERPAYMNT', MENU_TRANSACTION);
@@ -42,6 +44,8 @@ class suppliers_app extends application
 			"purchasing/inquiry/supplier_inquiry.php?", 'SA_SUPPTRANSVIEW', MENU_INQUIRY);
 		$this->add_lapp_function(1, _("Supplier Allocation &Inquiry"),
 			"purchasing/inquiry/supplier_allocation_inquiry.php?", 'SA_SUPPLIERALLOC', MENU_INQUIRY);
+		$this->add_lapp_function(1, _("Regjistri i Blerjeve nga Importi"),
+			"modules/ks_imports/imports.php", 'SA_SUPPTRANSVIEW', MENU_INQUIRY);
 
 		$this->add_rapp_function(1, _("Supplier and Purchasing &Reports"),
 			"reporting/reports_main.php?Class=1", 'SA_SUPPTRANSVIEW', MENU_REPORT);
