@@ -149,12 +149,12 @@ if ($split) {
             start_table(TABLESTYLE_NOBORDER);
             start_row();
             submit_cells('prepare_liability_split',
-                _('Konfirmo ndarjen e detyrimeve'), true,
+                _('Konfirmo ndarjen e detyrimeve'), '',
                 _('Hapi i pare: kontrolloni shumat para krijimit te dokumenteve.'),
                 'default');
-            submit_cells('cancel_liability_split', _('Anulo draftin'), true,
+            submit_cells('cancel_liability_split', _('Anulo draftin'), '',
                 _('Anulon vetem draftin; fatura dhe kontabiliteti nuk preken.'),
-                ICON_DELETE);
+                'cancel');
             end_row();
             end_table();
         }
