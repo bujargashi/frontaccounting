@@ -1,0 +1,13 @@
+# Environment and company data
+config.php
+config_db.php
+company/
+tmp/
+attachments/
+backups/
+error_log
+*.log
+*.sql.gz
+*.zip
+*.tar
+*.tar.gz
