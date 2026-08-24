@@ -11,10 +11,9 @@ function ks_import_payment_split_enabled()
 
 function ks_import_payment_split_table_exists()
 {
-    $sql = "SHOW TABLES LIKE ".
-        db_escape(TB_PREF.'ks_import_payment_splits');
+    $sql = "SELECT COUNT(*) FROM ".TB_PREF."ks_import_payment_splits";
     $res = db_query($sql);
-    return $res && db_num_rows($res) > 0;
+    return $res !== false;
 }
 
 function ks_import_payment_split_defaults()
