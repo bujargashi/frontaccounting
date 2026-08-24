@@ -1,5 +1,5 @@
 <?php
-$page_security = 'SA_KS_IMPORT_ENTRY';
+$page_security = 'SA_SUPPLIERINVOICE';
 $path_to_root = '../..';
 
 include_once($path_to_root.'/includes/session.inc');

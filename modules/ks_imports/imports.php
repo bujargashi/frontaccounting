@@ -1,5 +1,5 @@
 <?php
-$page_security = 'SA_KS_IMPORT_VIEW';
+$page_security = 'SA_SUPPTRANSVIEW';
 $path_to_root = '../..';
 
 include_once($path_to_root.'/includes/session.inc');
