@@ -17,6 +17,12 @@ include_once($path_to_root . "/purchasing/includes/purchasing_ui.inc");
 include_once($path_to_root . "/purchasing/includes/db/suppliers_db.inc");
 include_once($path_to_root . "/reporting/includes/reporting.inc");
 
+$ks_import_integration = $path_to_root . "/modules/ks_imports/includes/native_import_ui.inc";
+if (file_exists($ks_import_integration)) {
+	include_once($ks_import_integration);
+	ks_import_prepare_purchase_entry();
+}
+
 set_page_security( @$_SESSION['PO']->trans_type,
 	array(	ST_PURCHORDER => 'SA_PURCHASEORDER',
 			ST_SUPPRECEIVE => 'SA_GRN',
@@ -59,8 +65,11 @@ if (isset($_GET['ModifyOrderNumber']) && is_numeric($_GET['ModifyOrderNumber']))
 	if (isset($_GET['FixedAsset'])) {
 		$_SESSION['page_title'] = _($help_context = "Fixed Asset Purchase Invoice Entry");
 		$_SESSION['PO']->fixed_asset = true;
-	} else
+	} elseif (function_exists('ks_import_is_active') && ks_import_is_active()) {
+		$_SESSION['page_title'] = _($help_context = "Blerje nga Importi");
+	} else {
 		$_SESSION['page_title'] = _($help_context = "Direct Purchase Invoice Entry");
+	}
 }
 
 page($_SESSION['page_title'], false, false, "", $js);
@@ -138,7 +147,14 @@ if (isset($_GET['AddedID']))
 	hyperlink_params("$path_to_root/purchasing/supplier_payment.php", _("Entry supplier &payment for this invoice"),
 		"trans_type=$trans_type&PInvoice=".$trans_no);
 
-	hyperlink_params($_SERVER['PHP_SELF'], _("Enter &Another Direct Invoice"), "NewInvoice=Yes");
+	if (function_exists('ks_import_is_active') && ks_import_is_active()) {
+		hyperlink_params("$path_to_root/modules/ks_imports/import_details.php",
+			_("View or update import details"), "trans_no=$trans_no");
+		hyperlink_params($_SERVER['PHP_SELF'], _("Enter another Import Purchase"),
+			"NewInvoice=Yes&ImportPurchase=Yes");
+	} else {
+		hyperlink_params($_SERVER['PHP_SELF'], _("Enter &Another Direct Invoice"), "NewInvoice=Yes");
+	}
 	
 	hyperlink_params("$path_to_root/admin/attachments.php", _("Add an Attachment"), 
 		"filterType=$trans_type&trans_no=$trans_no");
@@ -410,6 +426,8 @@ function can_commit()
 		set_focus('prep_amount');
 		return false;
 	}
+	if (function_exists('ks_import_validate_purchase') && !ks_import_validate_purchase())
+		return false;
 
 	return true;
 }
@@ -425,6 +443,8 @@ function handle_commit_order()
 		if ($cart->order_no == 0) { // new po/grn/invoice
 			$trans_no = add_direct_supp_trans($cart);
 			if ($trans_no) {
+				if (function_exists('ks_import_store_native_invoice'))
+					ks_import_store_native_invoice($trans_no, $cart);
 				unset($_SESSION['PO']);
 				if ($cart->trans_type == ST_PURCHORDER)
 	 				meta_forward($_SERVER['PHP_SELF'], "AddedID=$trans_no");
@@ -489,6 +509,9 @@ if ($_SESSION['PO']->trans_type == ST_SUPPINVOICE) {
 textarea_row(_("Memo:"), 'Comments', null, 70, 4);
 
 end_table(1);
+
+if (function_exists('ks_import_display_fields'))
+	ks_import_display_fields();
 
 div_start('controls', 'items_table');
 $process_txt = _("Place Order");

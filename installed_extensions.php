@@ -6,7 +6,7 @@
 	FA extension system documentation.
 */
 
-$next_extension_id = 14; // unique id for next installed extension
+$next_extension_id = 15; // unique id for next installed extension
 
 $installed_extensions = array (
   1 => 
@@ -116,5 +116,14 @@ $installed_extensions = array (
     'type' => 'extension',
     'active' => false,
     'path' => 'modules/requisitions',
+  ),
+  14 =>
+  array (
+    'name' => 'Blerje nga Importi',
+    'package' => 'ks_imports',
+    'version' => '4.0.0-1',
+    'type' => 'extension',
+    'active' => false,
+    'path' => 'modules/ks_imports',
   ),
 );

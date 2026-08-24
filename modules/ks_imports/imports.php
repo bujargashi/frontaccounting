@@ -1,8 +1,86 @@
 <?php
-$page_security='SA_KS_IMPORT_VIEW';$path_to_root='../..';include_once($path_to_root.'/includes/session.inc');add_access_extensions();include_once($path_to_root.'/includes/ui.inc');include_once($path_to_root.'/includes/date_functions.inc');
-page(_($help_context='Regjistri - Blerje nga importi'),false,false,'',user_use_date_picker()?get_js_date_picker():'');
-if(!isset($_POST['from_date'])){$_POST['from_date']=begin_month(Today());$_POST['to_date']=Today();$_POST['status_filter']='';$_POST['search']='';}
-start_form();start_table(TABLESTYLE_NOBORDER);start_row();date_cells(_('Nga:'),'from_date');date_cells(_('Deri:'),'to_date');label_cell(_('Statusi:'));echo '<td>'.array_selector('status_filter',null,array(''=>_('Te gjitha'),'draft'=>_('Draft'),'ready'=>_('Kontrolluar'),'posted'=>_('Postuar'),'void'=>_('Anuluar'))).'</td>';text_cells(_('Kerko:'),'search',null,28,80);submit_cells('filter',_('Filtro'),'','','default');end_row();end_table();end_form();
-$where=array("h.invoice_date>=".db_escape(date2sql(get_post('from_date'))),"h.invoice_date<=".db_escape(date2sql(get_post('to_date'))));if(get_post('status_filter')!=='')$where[]='h.status='.db_escape(get_post('status_filter'));if(trim(get_post('search'))!==''){$n='%'.trim(get_post('search')).'%';$where[]='(h.reference LIKE '.db_escape($n).' OR h.dud_no LIKE '.db_escape($n).' OR h.supplier_invoice_no LIKE '.db_escape($n).' OR s.supp_name LIKE '.db_escape($n).')';}
-$r=db_query("SELECT h.*,s.supp_name,(SELECT COUNT(*) FROM ".TB_PREF."ks_purchase_import_lines l WHERE l.import_id=h.id) line_count FROM ".TB_PREF."ks_purchase_imports h LEFT JOIN ".TB_PREF."suppliers s ON s.supplier_id=h.supplier_id WHERE ".implode(' AND ',$where)." ORDER BY h.invoice_date DESC,h.id DESC");
-display_heading(_('REGJISTRI I BLERJEVE NGA IMPORTI'));start_table(TABLESTYLE,"width='98%'");table_header(array(_('Referenca'),_('Furnitori'),_('Fatura'),_('DUD'),_('Data'),_('Artikuj'),_('Mall EUR'),_('Dogane'),_('TVSH'),_('Landed cost'),_('Statusi')));$k=0;while($v=db_fetch_assoc($r)){alt_table_row_color($k);label_cell("<a href='purchase_import.php?id=".(int)$v['id']."'>".$v['reference'].'</a>');label_cell($v['supp_name']);label_cell($v['supplier_invoice_no']);label_cell($v['dud_no']);label_cell(sql2date($v['invoice_date']));qty_cell($v['line_count'],false,0);amount_cell($v['goods_base']);amount_cell($v['duty_base']+$v['excise_base']);amount_cell($v['vat_amount']);amount_cell($v['landed_total']);label_cell(strtoupper($v['status']));end_row();}end_table(1);start_table(TABLESTYLE_NOBORDER);start_row();label_cell("<a class='button' href='purchase_import.php'>"._('Blerje e re nga importi').'</a>');end_row();end_table();end_page();
+$page_security = 'SA_KS_IMPORT_VIEW';
+$path_to_root = '../..';
+
+include_once($path_to_root.'/includes/session.inc');
+add_access_extensions();
+include_once($path_to_root.'/includes/ui.inc');
+include_once($path_to_root.'/includes/date_functions.inc');
+include_once($path_to_root.'/reporting/includes/reporting.inc');
+include_once($path_to_root.'/modules/ks_imports/includes/native_import_db.inc');
+
+page(_($help_context = 'Regjistri i Blerjeve nga Importi'), false, false, '',
+    user_use_date_picker() ? get_js_date_picker() : '');
+
+if (!isset($_POST['from_date'])) {
+    $_POST['from_date'] = begin_month(Today());
+    $_POST['to_date'] = Today();
+    $_POST['supplier_id'] = 0;
+    $_POST['search'] = '';
+}
+
+start_form();
+start_table(TABLESTYLE_NOBORDER);
+start_row();
+date_cells(_('Nga:'), 'from_date');
+date_cells(_('Deri:'), 'to_date');
+supplier_list_cells(_('Furnitori:'), 'supplier_id', null, _('Te gjithe furnitoret'), true);
+text_cells(_('Kerko:'), 'search', null, 24, 80);
+submit_cells('filter', _('Filtro'), '', '', 'default');
+end_row();
+end_table();
+end_form();
+
+display_heading(_('REGJISTRI I BLERJEVE NGA IMPORTI'));
+start_table(TABLESTYLE, "width='99%'");
+table_header(array(
+    _('Data'), _('Furnitori'), _('Fatura'), _('DUD'), _('Origjina'),
+    _('Vlera doganore'), _('Dogana'), _('Akciza'), _('Baza TVSH'),
+    _('TVSH import'), _('Fatura FA'), ''
+));
+
+$res = ks_import_query(get_post('from_date'), get_post('to_date'),
+    (int)get_post('supplier_id'), get_post('search'));
+$k = 0;
+$totals = array('customs_value' => 0, 'customs_duty' => 0, 'excise' => 0,
+    'import_vat_base' => 0, 'import_vat' => 0);
+while ($row = db_fetch_assoc($res)) {
+    alt_table_row_color($k);
+    label_cell(sql2date($row['clearance_date']));
+    label_cell($row['supp_name']);
+    label_cell($row['supp_reference']);
+    label_cell($row['dud_no']);
+    label_cell($row['origin_country']);
+    amount_cell($row['customs_value']);
+    amount_cell($row['customs_duty']);
+    amount_cell($row['excise']);
+    amount_cell($row['import_vat_base']);
+    amount_cell($row['import_vat']);
+    label_cell(get_trans_view_str(ST_SUPPINVOICE, $row['trans_no'],
+        $row['reference']));
+    label_cell("<a href='import_details.php?trans_no=".(int)$row['trans_no']."'>".
+        _('Detajet').'</a>');
+    end_row();
+    foreach ($totals as $name => $value) {
+        $totals[$name] += $row[$name];
+    }
+}
+
+start_row();
+label_cell('<b>'._('TOTALI').'</b>', "colspan='5'");
+foreach ($totals as $value) {
+    amount_cell($value, true);
+}
+label_cell('', "colspan='2'");
+end_row();
+end_table(1);
+
+start_table(TABLESTYLE_NOBORDER);
+start_row();
+label_cell("<a class='button' href='purchase_import.php?New=1'>".
+    _('Blerje e re nga Importi').'</a>');
+label_cell("<a class='button' href='../../reporting/reports_main.php?Class=1'>".
+    _('Raportet e Blerjeve').'</a>');
+end_row();
+end_table();
+end_page();
