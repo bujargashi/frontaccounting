@@ -1,0 +1,2779 @@
+# Front Accounting ERP.
+# Copyright (C) 2007-2015 Front Accounting Team
+# This file is distributed under the same license as the Front Accounting package.
+# Janusz Dobrowolski <janusz@my.frontaccounting.com>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 2.8.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-25 21:39+0100\n"
+"PO-Revision-Date: 2015-05-06 16:19+0100\n"
+"Last-Translator: Janusz Dobrowolski <janusz@frontaccounting.eu>\n"
+"Language-Team: \n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+msgid "Show also Inactive"
+msgstr "Poka¿ równie¿ nieaktywne"
+
+msgid "Update"
+msgstr "Aktualizuj"
+
+msgid "First"
+msgstr "Pocz±tek"
+
+msgid "Prev"
+msgstr "Poprzednie"
+
+msgid "Next"
+msgstr "Nastêpne"
+
+msgid "Last"
+msgstr "Koniec"
+
+#, php-format
+msgid "Records %d-%d of %d"
+msgstr "Rekordy %d-%d z %d"
+
+msgid "No records"
+msgstr "Brak rekordów"
+
+msgid "Incorrect Password"
+msgstr "B³êdne Has³o"
+
+msgid "The user and password combination is not valid for the system."
+msgstr "Login lub has³o jest nieprawid³owe."
+
+msgid "If you are not an authorized user, please contact your system administrator to obtain an account to enable you to use the system."
+msgstr "Je¶li nie masz uprawnieñ do korzystania z tego systemu zg³o¶ siê do administratora aby je uzyskaæ."
+
+msgid "Try again"
+msgstr "Spróbuj ponownie"
+
+msgid "Incorrect Email"
+msgstr "B³êdny adres email"
+
+msgid "The email address does not exist in the system, or is used by more than one user."
+msgstr "Ten adres email nie jest zarejestrowany w systemie, lub jest u¿ywany przez wiêcej ni¿ jednego u¿ytkownika."
+
+msgid "Plase try again or contact your system administrator to obtain new password."
+msgstr "Spróbuj ponownie lub skontaktuj siê z administratorem systemu aby otrzymaæ nowe has³o."
+
+msgid "New password sent"
+msgstr "Nowe has³o zosta³o wys³ane"
+
+msgid "A new password has been sent to your mailbox."
+msgstr "Nowe has³o zosta³o wys³ane na Twoj± skrzynkê email."
+
+msgid "Login here"
+msgstr "Zaloguj siê tutaj"
+
+#, php-format
+msgid "Brute force attack on account '%s' detected. Access for non-logged users temporarily blocked."
+msgstr "Wykryto atak typu brute force na konto '%s'. Dostêp dla niezalogowanych u¿ytkowników zosta³ czasowo zablokowany."
+
+msgid "Security settings have not been defined for your user account."
+msgstr "Nie ustawiono uprawnieñ dla Twojego konta."
+
+msgid "Please contact your system administrator."
+msgstr "Skontaktuj siê z administratorem systemu."
+
+msgid "Please remove $security_groups and $security_headings arrays from config.php file!"
+msgstr "Usuñ $security_groups i $security_headings z pliku config.php!"
+
+msgid "Access to application has been blocked until database upgrade is completed by system administrator."
+msgstr "Dostêp do aplikacji jest chwilowo zablokowany, do czasu zakoñczenia procesu aktualizacji oprogramowania przez administratora."
+
+msgid "The security settings on your account do not permit you to access this function"
+msgstr "Twój zakres uprawnieñ nie pozwala ci na dostêp do tej funkcji"
+
+msgid "System is blocked after source upgrade until database is updated on System/Software Upgrade page"
+msgstr "System zablokowany po aktualizacji aplikacji doczasu zakutalizowanania baz danych przez administratora serwisu"
+
+msgid "Set filter"
+msgstr "Ustaw filtr"
+
+msgid "Select"
+msgstr "Wybierz"
+
+msgid "Press Space tab for search pattern entry"
+msgstr "Naci¶nij spacjê aby wprowadziæ wzorzec wyszukiwania"
+
+msgid "Enter code fragment to search or * for all"
+msgstr "Wprowad¼ fragment kodu lub * aby wy³±czyæ filtrowanie"
+
+msgid "Enter description fragment to search or * for all"
+msgstr "Podaj fragment opisu lub * aby wy³±czyæ filtrowanie"
+
+msgid "Search items"
+msgstr "Przeszukaj"
+
+msgid "Search customers"
+msgstr ""
+
+msgid "Search branches"
+msgstr ""
+
+msgid "Search suppliers"
+msgstr ""
+
+msgid "Search GL accounts"
+msgstr ""
+
+msgid "All Suppliers"
+msgstr "Wszyscy Dostawcy"
+
+msgid "Press Space tab to filter by name fragment"
+msgstr "Naci¶nij spacjê aby filtrowaæ wg fragmentu nazwy"
+
+msgid "Select supplier"
+msgstr "Wybierz dostawcê"
+
+msgid "All Customers"
+msgstr "Wszyscy Klienci"
+
+msgid "Press Space tab to filter by name fragment; F2 - entry new customer"
+msgstr "Naci¶nij spacjê, aby filtrowaæ wg fragmentu nazwy; F2 - dodaj nowego klienta"
+
+msgid "Select customer"
+msgstr "Wybierz klienta"
+
+msgid "All branches"
+msgstr "Wszystkie oddzia³y"
+
+msgid "Select customer branch"
+msgstr "Wybierz oddzia³ klienta"
+
+msgid "All Locations"
+msgstr "Wszystkie Magazyny"
+
+msgid "Closed"
+msgstr "Zamkniêty"
+
+msgid "Active"
+msgstr "Aktywny"
+
+msgid "All Items"
+msgstr "Wszystkie Pozycje"
+
+msgid "Amount"
+msgstr "Kwota"
+
+msgid "All Sales Types"
+msgstr "Wszystkie Cenniki Sprzeda¿y"
+
+msgid "Use Item Sales Accounts"
+msgstr "U¿ywaj Kont wg Towarów"
+
+msgid "No"
+msgstr "Nie"
+
+msgid "Yes"
+msgstr "Tak"
+
+msgid "All"
+msgstr "Wszystko"
+
+msgid "All Types"
+msgstr "Wszystkie Typy"
+
+msgid "Sales Invoices"
+msgstr "Faktura Sprzeda¿y"
+
+msgid "Unsettled transactions"
+msgstr "Transakcje nierozliczone"
+
+msgid "Payments"
+msgstr "P³atno¶ci"
+
+msgid "Credit Notes"
+msgstr "Korekty"
+
+msgid "Delivery Notes"
+msgstr "WZ"
+
+msgid "Journal Entries"
+msgstr "Pozycje Dziennika"
+
+msgid "Invoices"
+msgstr "Faktury"
+
+msgid "Overdue Invoices"
+msgstr "Faktury Przeterminowane"
+
+msgid "Overdue Credit Notes"
+msgstr "Korekty Przeterminowane"
+
+msgid "GRNs"
+msgstr "PZ"
+
+msgid "Automatically put balance on back order"
+msgstr "Automatycznie zawie¶ czê¶æ niezrealizowan±"
+
+msgid "Cancel any quantites not delivered"
+msgstr "Anuluj wszystkie ilo¶ci nie wys³ane"
+
+msgid "Items Returned to Inventory Location"
+msgstr "Zwrot Towarów do Magazynu"
+
+msgid "Items Written Off"
+msgstr "Spisanie Towarów na Straty"
+
+msgid "Inactive"
+msgstr "Nieaktywny"
+
+msgid "New role"
+msgstr "Nowy profil"
+
+msgid "No tags defined."
+msgstr "Brak tagów."
+
+msgid "No active tags defined."
+msgstr "Brak aktywnych tagów."
+
+#, php-format
+msgid "Activated for '%s'"
+msgstr "Aktywne dla '%s'"
+
+msgid "Available and/or installed"
+msgstr "Dostêpna i/lub zainstalowana"
+
+msgid "Standard new company American COA (4 digit)"
+msgstr "Standardowy plan kont USA (4 cyfrowy)"
+
+msgid "Standard American COA (4 digit) with demo data"
+msgstr "Standardowy plan kont USA (4 cyfrowy) z danymi demo ."
+
+msgid "No payment Link"
+msgstr "Bez linku p³atno¶ci"
+
+msgid "Numeric"
+msgstr "Numeryczne"
+
+msgid "Alpha Numeric"
+msgstr "Alfanumeryczne"
+
+msgid "ALPHA NUMERIC"
+msgstr "ALFANUMERYCZNE"
+
+msgid "All users"
+msgstr "Wszyscy U¿ytkownicy"
+
+msgid "Add new"
+msgstr "Dodaj nowy"
+
+msgid "Submit changes"
+msgstr "Zatwierd¼ zmiany"
+
+msgid "Clone"
+msgstr "Sklonuj"
+
+msgid "Edit new record with current data"
+msgstr "Utwórz nowy rekord w oparciu o te dane"
+
+msgid "Cancel"
+msgstr "Zrezygnuj"
+
+msgid "Cancel edition"
+msgstr "Anuluj zmiany"
+
+msgid "Delete"
+msgstr "Usuñ"
+
+msgid "Click Here to Pick up the date"
+msgstr "Kliknij aby wybraæ datê"
+
+msgid "Current Credit:"
+msgstr "Aktualny kredyt:"
+
+msgid "Bank Balance:"
+msgstr "Saldo Konta:"
+
+msgid "GL"
+msgstr "KG"
+
+msgid "Info"
+msgstr "Info"
+
+#, php-format
+msgid "Cannot retrieve exchange rate for currency %s. Please adjust approximate rate if needed."
+msgstr "Nie mo¿na odtworzyæ kursu dla waluty %s. Sprawd¼ i skoryguj proponowany kurs."
+
+msgid "Exchange Rate:"
+msgstr "Kurs Wymiany:"
+
+msgid "Date Voided:"
+msgstr "Data Anulowania:"
+
+msgid "Memo:"
+msgstr "Opis:"
+
+msgid "Total Tax Excluded"
+msgstr "Razem Netto"
+
+msgid "Included"
+msgstr "Wliczono"
+
+msgid "Type"
+msgstr "Typ"
+
+msgid "Number"
+msgstr "Numer"
+
+msgid "Date"
+msgstr "Data"
+
+msgid "Total Amount"
+msgstr "Razem warto¶æ:"
+
+msgid "Left to Allocate"
+msgstr "Pozosta³o do Rozliczenia"
+
+msgid "This Allocation"
+msgstr "Tu Rozliczone"
+
+msgid "Total Allocated:"
+msgstr "Razem Alokowane:"
+
+msgid "Left to Allocate:"
+msgstr "Pozosta³o do Rozliczenia:"
+
+msgid "Allocations"
+msgstr "Rozliczenia"
+
+msgid "Pre-Payments"
+msgstr "Przedp³aty"
+
+msgid "No Quick Entries are defined."
+msgstr "Nie zdefiniowano Wzorców Szybkiego Ksiêgowania"
+
+msgid "No Quick Entry lines are defined."
+msgstr "Wzorzec nie zawiera ¿adnych ksiêgowañ."
+
+msgid "Cannot post to GL account used by more than one tax type."
+msgstr "Nie mo¿na wykonaæ ksiêgowañ na kontach u¿ywanych przez wiêcej ni¿ jedn± stawkê podatkow±."
+
+msgid "and"
+msgstr "i"
+
+msgid "January"
+msgstr "Styczeñ"
+
+msgid "February"
+msgstr "Luty"
+
+msgid "March"
+msgstr "Marzec"
+
+msgid "April"
+msgstr "Kwiecieñ"
+
+msgid "May"
+msgstr "Maj"
+
+msgid "June"
+msgstr "Czerwiec"
+
+msgid "July"
+msgstr "Lipiec"
+
+msgid "August"
+msgstr "Sierpieñ"
+
+msgid "September"
+msgstr "Wrzesieñ"
+
+msgid "October"
+msgstr "Pa¼dziernik"
+
+msgid "November"
+msgstr "Listopad"
+
+msgid "December"
+msgstr "Grudzieñ"
+
+msgid "Su"
+msgstr "Ni"
+
+msgid "Mo"
+msgstr "Po"
+
+msgid "Tu"
+msgstr "Wt"
+
+msgid "We"
+msgstr "¦r"
+
+msgid "Th"
+msgstr "Cz"
+
+msgid "Fr"
+msgstr "Pt"
+
+msgid "Sa"
+msgstr "So"
+
+msgid "W"
+msgstr "T"
+
+msgid "Back"
+msgstr "Powrót"
+
+msgid "Edit"
+msgstr "Zmieñ"
+
+msgid "Request from outside of this page is forbidden."
+msgstr "Wywo³anie z poza tej strony jest zabronione."
+
+msgid "CSRF attack detected from: "
+msgstr "Wykryto atak typu CSRF z:"
+
+msgid "You should automatically be forwarded."
+msgstr "Powinienne¶ byæ automatycznie przekierowany."
+
+msgid "If this does not happen"
+msgstr "je¶li to nie nast±pi"
+
+msgid "click here"
+msgstr "kliknij tutaj"
+
+msgid "to continue"
+msgstr "aby kontynuowaæ"
+
+msgid "Print"
+msgstr "Drukuj"
+
+msgid "Close"
+msgstr "Zamknij"
+
+msgid "Customers"
+msgstr "Klienci"
+
+msgid "Branches"
+msgstr "Oddzia³y"
+
+msgid "Suppliers"
+msgstr "Dostawcy"
+
+msgid "Items"
+msgstr "Kartoteka produktów, towarów, us³ug i wzorców ksiêgowych"
+
+msgid "Proceed"
+msgstr "Kontynuuj"
+
+msgid ""
+"Entered data has not been saved yet.\n"
+"Do you want to abandon changes?"
+msgstr ""
+"Wprowadzone dane nie zosta³y zapisane\n"
+"Czy chcesz zrezygnowaæ z zapisu?"
+
+msgid "Journal Entry"
+msgstr "Pozycje Dziennika"
+
+msgid "Bank Payment"
+msgstr "Wyp³ata"
+
+msgid "Bank Deposit"
+msgstr "Wp³ata"
+
+msgid "Funds Transfer"
+msgstr "Transfer Funduszy"
+
+msgid "Sales Invoice"
+msgstr "Faktura Sprzeda¿y"
+
+msgid "Customer Credit Note"
+msgstr "Korekta Sprzeda¿y"
+
+msgid "Customer Payment"
+msgstr "P³atno¶æ Klienta"
+
+msgid "Delivery Note"
+msgstr "WZ/Paragon"
+
+msgid "Location Transfer"
+msgstr "Przesuniêcie Magazynowe"
+
+msgid "Inventory Adjustment"
+msgstr "Korekta Magazynowa"
+
+msgid "Purchase Order"
+msgstr "Zamówienie Zakupu"
+
+msgid "Supplier Invoice"
+msgstr "Faktura Dostawcy"
+
+msgid "Supplier Credit Note"
+msgstr "Korekta Dostawy"
+
+msgid "Supplier Payment"
+msgstr "P³atno¶æ dla Dostawcy"
+
+msgid "Purchase Order Delivery"
+msgstr "Przyjêcie Towarów"
+
+msgid "Work Order"
+msgstr "Zlecenie Produkcyjne"
+
+msgid "Work Order Issue"
+msgstr "Wydanie na Produkcjê"
+
+msgid "Work Order Production"
+msgstr "Produkcja na Zlecenie"
+
+msgid "Sales Order"
+msgstr "Zamówienie/Proforma"
+
+msgid "Sales Quotation"
+msgstr "Oferta Sprzeda¿y"
+
+msgid "Cost Update"
+msgstr "Aktualizacja Kosztów"
+
+msgid "Dimension"
+msgstr "Przekrój"
+
+msgid "Customer"
+msgstr "Klient"
+
+msgid "Supplier"
+msgstr "Dostawca"
+
+msgid "Fixed Assets Disposal"
+msgstr ""
+
+msgid "Fixed Assets Revaluation"
+msgstr ""
+
+msgid "GJ"
+msgstr "PK"
+
+msgid "BP"
+msgstr "KW"
+
+msgid "BD"
+msgstr "KP"
+
+msgid "BT"
+msgstr "TF"
+
+msgid "SI"
+msgstr "FS"
+
+msgid "CN"
+msgstr "FK"
+
+msgid "CP"
+msgstr "KPs"
+
+msgid "DN"
+msgstr "WZ"
+
+msgid "IT"
+msgstr "MM"
+
+msgid "IA"
+msgstr "KM"
+
+msgid "PO"
+msgstr "ZZ"
+
+msgid "PI"
+msgstr "FZ"
+
+msgid "PC"
+msgstr "KZ"
+
+msgid "SP"
+msgstr "KWd"
+
+msgid "GRN"
+msgstr "PZ"
+
+msgid "WO"
+msgstr "ZP"
+
+msgid "WI"
+msgstr "WP"
+
+msgid "WP"
+msgstr "PP"
+
+msgid "SO"
+msgstr "ZS"
+
+msgid "SQ"
+msgstr "FPr"
+
+msgid "CU"
+msgstr "AK"
+
+msgid "Dim"
+msgstr "Prz"
+
+msgid "Savings Account"
+msgstr "Oszczêdno¶ciowe"
+
+msgid "Chequing Account"
+msgstr "Czekowe"
+
+msgid "Credit Account"
+msgstr "Kredytowe"
+
+msgid "Cash Account"
+msgstr "Gotówkowe"
+
+msgid "Transfer"
+msgstr "Przelew"
+
+msgid "Cheque"
+msgstr "Czek"
+
+msgid "Credit"
+msgstr "Ma"
+
+msgid "Cash"
+msgstr "Gotówka"
+
+msgid "Miscellaneous"
+msgstr "Ró¿ne"
+
+msgid "Quick Entry"
+msgstr "Wzorzec"
+
+msgid "Assemble"
+msgstr "Monta¿"
+
+msgid "Unassemble"
+msgstr "Demonta¿"
+
+msgid "Advanced Manufacture"
+msgstr "Produkcja Z³o¿ona"
+
+msgid "Labour Cost"
+msgstr "Narzuty p³acowe"
+
+msgid "Overhead Cost"
+msgstr "Narzuty ogólne"
+
+msgid "Materials"
+msgstr "Materia³y"
+
+msgid "Assets"
+msgstr "Aktywa"
+
+msgid "Liabilities"
+msgstr "Zobowi±zania"
+
+msgid "Equity"
+msgstr "Kapita³ w³asny"
+
+msgid "Income"
+msgstr "Przychód"
+
+msgid "Cost of Goods Sold"
+msgstr "Koszty Sprzeda¿y"
+
+msgid "Expense"
+msgstr "Koszty ogólne"
+
+msgid "Remainder"
+msgstr "Reszta kwoty"
+
+msgid "Amount, increase base"
+msgstr "Kwota, powiêksz bazê"
+
+msgid "Amount, reduce base"
+msgstr "Kwota, pomniejsz bazê"
+
+msgid "% amount of base"
+msgstr "% czê¶æ bazy"
+
+msgid "% amount of base, increase base"
+msgstr "Kwota w % bazy, powiêksz bazê"
+
+msgid "% amount of base, reduce base"
+msgstr "Kwota w % bazy, pomniejsz bazê"
+
+msgid "Taxes added"
+msgstr "Podatek od netto"
+
+msgid "Taxes added, increase base"
+msgstr "Podatek od netto, powiêksz bazê"
+
+msgid "Taxes added, reduce base"
+msgstr "Podatek od netto, pomniejsz bazê"
+
+msgid "Taxes included"
+msgstr "Podatek w brutto"
+
+msgid "Taxes included, increase base"
+msgstr "Podatek w brutto, powiêksz bazê "
+
+msgid "Taxes included, reduce base"
+msgstr "Podatek w brutto, pomniejsz bazê"
+
+msgid "Supplier Invoice/Credit"
+msgstr "Faktura/Korekta Dostawcy"
+
+msgid "Declining balance"
+msgstr ""
+
+msgid "Straight line"
+msgstr ""
+
+msgid "Sum of the Year Digits"
+msgstr ""
+
+msgid "One-time"
+msgstr ""
+
+msgid "Manufactured"
+msgstr "Produkt"
+
+msgid "Purchased"
+msgstr "Towar"
+
+msgid "Service"
+msgstr "Us³uga"
+
+msgid "Account"
+msgstr "Konto"
+
+msgid "Customer branch"
+msgstr "Oddzia³ klienta"
+
+msgid "Shipper"
+msgstr "Transport"
+
+msgid "Company internal"
+msgstr "Wewnêtrzny firmowy"
+
+msgid "Prepayment"
+msgstr "Przedp³ata"
+
+msgid "After No. of Days"
+msgstr "Po Podanej Liczbie Dni"
+
+msgid "Day In Following Month"
+msgstr "Dzieñ Miesi±ca"
+
+msgid "Sum per line taxes"
+msgstr "Sumowanie VAT dla poszczególnych pozycji"
+
+msgid "Taxes from totals"
+msgstr "Obliczanie VAT od sum netto"
+
+msgid "Unknown"
+msgstr "Nieznana"
+
+msgid "Company"
+msgstr "Firma"
+
+msgid "Jan"
+msgstr "Sty"
+
+msgid "Feb"
+msgstr "Lut"
+
+msgid "Mar"
+msgstr "Mar"
+
+msgid "Apr"
+msgstr "Kwi"
+
+msgid "Jun"
+msgstr "Cze"
+
+msgid "Jul"
+msgstr "Lip"
+
+msgid "Aug"
+msgstr "Sie"
+
+msgid "Sep"
+msgstr "Wrz"
+
+msgid "Oct"
+msgstr "Pa¿"
+
+msgid "Nov"
+msgstr "Lis"
+
+msgid "Dec"
+msgstr "Gru"
+
+msgid "Unicode (multilanguage)"
+msgstr "Unicode (wielojêzykowe)"
+
+msgid "Icelandic"
+msgstr "Islandzki"
+
+msgid "Latvian"
+msgstr "£otewski"
+
+msgid "Romanian"
+msgstr "Rumuñski"
+
+msgid "Slovenian"
+msgstr "S³loweñski"
+
+msgid "Polish"
+msgstr "Polski"
+
+msgid "Estonian"
+msgstr "Estoñski"
+
+msgid "Spanish"
+msgstr "Hiszpañski"
+
+msgid "Swedish"
+msgstr "Szwedzki"
+
+msgid "Turkish"
+msgstr "Turecki"
+
+msgid "Czech"
+msgstr "Czeski"
+
+msgid "Danish"
+msgstr "Duñski"
+
+msgid "Lithuanian"
+msgstr "Litewski"
+
+msgid "Slovak"
+msgstr "S³owacki"
+
+msgid "Spanish (alternative)"
+msgstr "Hiszpañski (alternatywny)"
+
+msgid "Persian"
+msgstr "Perski"
+
+msgid "Hungarian"
+msgstr "Wêgierski"
+
+msgid "French"
+msgstr "Francuski"
+
+msgid "Italian"
+msgstr "W³oski"
+
+msgid "General Ledger Transaction Details"
+msgstr "Szczegó³y Ksiêgowania Transakcji"
+
+msgid "The script must be called with a valid transaction type and transaction number to review the general ledger postings for."
+msgstr "Ta strona musi byæ wywo³ywana z wa¿nym numerem i typem transakcji dla której maj± byæ pokazane zapisy ksiêgowe."
+
+msgid "Reference"
+msgstr "Numer Ewid."
+
+msgid "Transaction Date"
+msgstr "Data Transakcji"
+
+msgid "GL #"
+msgstr ""
+
+msgid "Document Date"
+msgstr "Data Dokumentu"
+
+msgid "Event Date"
+msgstr "Data Operacji"
+
+msgid "Counterparty"
+msgstr "Kontrahent"
+
+msgid "Supplier Reference"
+msgstr "Numer Dokumentu Dostawcy"
+
+msgid "Entered By"
+msgstr "Wprowadzi³"
+
+msgid "Exchange rate"
+msgstr "Kurs Wymiany"
+
+msgid "Source document"
+msgstr "Dokument ¼ród³owy"
+
+msgid "No general ledger transactions have been created for"
+msgstr "Nie utworzono transakcji w Ksiêdze G³ównej dla"
+
+msgid "number"
+msgstr "numer"
+
+msgid "Journal Date"
+msgstr "Data ksiêgowania"
+
+msgid "Account Code"
+msgstr "Kod Konta"
+
+msgid "Account Name"
+msgstr "Nazwa Konta"
+
+msgid "Debit"
+msgstr "Winien"
+
+msgid "Memo"
+msgstr "Opis"
+
+msgid "Total"
+msgstr "Razem"
+
+msgid "This transaction has been voided."
+msgstr "Ta transakcja zosta³a anulowana."
+
+msgid "Charge To"
+msgstr "Nabywca"
+
+msgid "Delivered To"
+msgstr "Miejsce dostawy"
+
+msgid "Item Code"
+msgstr "Kod"
+
+msgid "Item Description"
+msgstr "Nazwa"
+
+msgid "Quantity"
+msgstr "Ilo¶æ"
+
+msgid "Unit"
+msgstr "Jm"
+
+msgid "Price"
+msgstr "Cena"
+
+msgid "Discount %"
+msgstr "Upust %"
+
+msgid "All amounts stated in"
+msgstr "Wszystkie warto¶ci podane w "
+
+msgid "Payment Terms"
+msgstr "Warunki P³atno¶ci"
+
+msgid "SALES QUOTATION"
+msgstr "OFERTA SPRZEDA¯Y"
+
+msgid "Quotation No."
+msgstr "Oferta Numer"
+
+msgid "Customer's Reference"
+msgstr "Identyfikator Klienta"
+
+msgid "Sales Person"
+msgstr "Sprzedawca"
+
+msgid "Your VAT no."
+msgstr "NIP/PESEL kontrahenta"
+
+msgid "Our Quotation No"
+msgstr "Oferta Numer"
+
+msgid "Valid until"
+msgstr "Wa¿na do"
+
+msgid "QUOTE"
+msgstr "OFERTA"
+
+msgid "PREPAYMENT ORDER"
+msgstr "ZAMÓWIENIE ZALICZKOWE"
+
+msgid "SALES ORDER"
+msgstr "ZAMÓWIENIE SPRZEDA¯Y"
+
+msgid "Order No."
+msgstr "Dokument Nr"
+
+msgid "Our Order No"
+msgstr "Nasz Numer Zam."
+
+msgid "Delivery Date"
+msgstr "Data Dostawy/Us³ugi"
+
+msgid "PACKING SLIP"
+msgstr "LISTA WYSY£KOWA"
+
+msgid "DELIVERY NOTE"
+msgstr "WYDANIE NA ZEWNÊTRZ"
+
+msgid "Delivery Note No."
+msgstr "WZ Numer"
+
+msgid "To Be Invoiced Before"
+msgstr "Faktura do"
+
+msgid "CREDIT NOTE"
+msgstr "FAKTURA KORYGUJ¡CA"
+
+msgid "Credit No."
+msgstr "F. koryguj±ca."
+
+msgid "Please quote Credit no. when paying. All amounts stated in"
+msgstr "W tytule przelewu prosimy o podanie numeru noty. Wszystkie kwoty wyra¿one w "
+
+msgid "Due Date"
+msgstr "Data p³atno¶ci"
+
+msgid "PREPAYMENT INVOICE"
+msgstr "FAKTURA VAT ZALICZKOWA"
+
+msgid "FINAL INVOICE"
+msgstr "FAKTURA KOÑCOWA"
+
+msgid "INVOICE"
+msgstr "FAKTURA VAT"
+
+msgid "Invoice No."
+msgstr "Faktura Nr "
+
+msgid "Please quote Invoice no. when paying. All amounts stated in"
+msgstr "W tytule przelewu prosimy o podanie numeru faktury. Wszystkie kwoty wyra¿one w "
+
+msgid "Date of Payment"
+msgstr "Data Zaliczki"
+
+msgid "Invoice Date"
+msgstr "Data wystawienia"
+
+msgid "Date of Sale"
+msgstr "Data Dostawy lub Us³ugi"
+
+msgid "REMITTANCE"
+msgstr "KW"
+
+msgid "Remittance No."
+msgstr "Kasa Wyda Nr."
+
+msgid "Order To"
+msgstr "Zamawiaj±cy"
+
+msgid "Supplier's Reference"
+msgstr "Numer Dokumentu Dostawcy"
+
+msgid "Trans Type"
+msgstr "Typ Transakcji"
+
+msgid "#"
+msgstr "nr "
+
+msgid "PURCHASE ORDER"
+msgstr "ZAMÓWIENIE ZAKUPU"
+
+msgid "Purchase Order No."
+msgstr "Zamówienie Zakupu Nr"
+
+msgid "Deliver To"
+msgstr "Dostawa Do"
+
+msgid "Order Date"
+msgstr "Data Zam."
+
+msgid "RECEIPT"
+msgstr "KP"
+
+msgid "Receipt No."
+msgstr "Wp³ata Nr"
+
+msgid "With thanks from"
+msgstr "Dziêkujemy, "
+
+msgid "WORK ORDER"
+msgstr "ZAMÓWIENIE PRODUKCYJNE"
+
+msgid "Work Order No."
+msgstr "Numer Zam."
+
+msgid "Manufactured Item"
+msgstr "W produkcji"
+
+msgid "Into Location"
+msgstr "Do Magazynu"
+
+msgid "Required By"
+msgstr "Termin"
+
+msgid "From Location"
+msgstr "Magazyn"
+
+msgid "Work Centre"
+msgstr "Centrum Produkcyjne"
+
+msgid "Unit Quantity"
+msgstr "Jednostka Miary"
+
+msgid "Total Quantity"
+msgstr "Ilo¶æ Sumaryczna"
+
+msgid "Units Issued"
+msgstr "Wydana Ilo¶æ"
+
+msgid "STATEMENT"
+msgstr "UZGODNIENIE SALD"
+
+msgid "DueDate"
+msgstr "Data p³."
+
+msgid "Debits"
+msgstr "Winien"
+
+msgid "Credits"
+msgstr "Ma"
+
+msgid "Allocated"
+msgstr "Rozliczone"
+
+msgid "Outstanding"
+msgstr "Do rozliczenia"
+
+msgid "Bank"
+msgstr "Bank"
+
+msgid "Bank Account"
+msgstr "Numer Konta"
+
+msgid "You can pay through"
+msgstr "Mo¿liwo¶æ zap³aty przez"
+
+msgid "* Subject to Realisation of the Cheque."
+msgstr "* Podstawa do Realizacji Czeku"
+
+msgid "The security settings on your account do not permit you to print this report"
+msgstr "Twój zakres uprawnieñ nie pozwala ci na wydruk tego raportu"
+
+msgid "Print Out Date"
+msgstr "Data Wydruku"
+
+msgid "Fiscal Year"
+msgstr "Rok Podatkowy"
+
+msgid "Comments"
+msgstr "Komentarz"
+
+msgid "Report Date"
+msgstr "Data Raportu"
+
+msgid "Generated At"
+msgstr "Wygenerowany"
+
+msgid "Generated By"
+msgstr "Przez"
+
+msgid "Phone"
+msgstr "Numer Telefonu"
+
+msgid "Fax"
+msgstr "Fax"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Our VAT No."
+msgstr "Numer NIP/PESEL:"
+
+msgid "Domicile"
+msgstr "Siedziba"
+
+msgid "Page"
+msgstr "Strona"
+
+msgid "Report Period"
+msgstr "Okres Raportu"
+
+#, php-format
+msgid "You have no email contact defined for this type of document for '%s'."
+msgstr "Brak zdefiniowanych kontaktów email dla tego typu dokumentu dla '%s'."
+
+msgid "Dear"
+msgstr "Szanowny"
+
+msgid "Attached you will find "
+msgstr "W za³±czeniu "
+
+msgid "Kindest regards"
+msgstr "Pozdrowienia"
+
+msgid "Sending document by email failed"
+msgstr "Wys³anie dokumentu emailem nie powiod³o siê"
+
+msgid "Email:"
+msgstr "E-mail:"
+
+msgid "has been sent by email to destination."
+msgstr "zosta³a wys³ana emailem."
+
+msgid "Report has been sent to network printer "
+msgstr "Raport zosta³ wys³any do drukowania na "
+
+msgid "Cannot open connection to printer"
+msgstr "Nie mo¿na otworzyæ po³±czenia z drukark±"
+
+msgid "Printer does not acept the job"
+msgstr "Drukarka nie przyjmuje wydruków"
+
+msgid "Error sending print job control file"
+msgstr "B³±d przy wysy³aniu pliku kontrolnego wydruku"
+
+msgid "Print control file not accepted"
+msgstr "Plik kontrolny wydruku odrzucony"
+
+msgid "Cannot send report to printer"
+msgstr "Nie mo¿na wys³aæ raportu na drukarkê"
+
+msgid "No ack after report printout"
+msgstr "Brak potwierdzenia przyjêcia wydruku"
+
+msgid "Cannot flush printing queue"
+msgstr "Nie mo¿na wydrukowaæ oczekuj±cych wydruków"
+
+msgid "Report Classes:"
+msgstr "Klasa Wydruku:"
+
+msgid "Reports For Class: "
+msgstr "Typ Wydruku:"
+
+msgid "Display: "
+msgstr "Poka¿: "
+
+msgid "Unknown report parameter type:"
+msgstr "Nieznany typ parametru raportu:"
+
+msgid "No Currency Filter"
+msgstr "Bez filtru waluty"
+
+msgid "PDF/Printer"
+msgstr "PDF"
+
+msgid "Portrait"
+msgstr "Pionowa"
+
+msgid "Landscape"
+msgstr "Poziomo"
+
+msgid "Accumulated"
+msgstr "Akumulowany"
+
+msgid "Period Y-1"
+msgstr "Okres Y-1"
+
+msgid "Budget"
+msgstr "Bud¿et"
+
+msgid "No Graphics"
+msgstr "Bez Grafiki"
+
+msgid "Vertical bars"
+msgstr "S³upki Pionowe"
+
+msgid "Horizontal bars"
+msgstr "S³upki Poziome"
+
+msgid "Dots"
+msgstr "Punktowy"
+
+msgid "Lines"
+msgstr "Liniowy"
+
+msgid "Pie"
+msgstr "Ko³owy"
+
+msgid "Donut"
+msgstr "Donut"
+
+msgid "Half Donut"
+msgstr "Pó³-Donut"
+
+msgid "Splines"
+msgstr "Linie"
+
+msgid "No Type Filter"
+msgstr "Bez Filtrowania Typu"
+
+msgid "No Account Group Filter"
+msgstr "Bez Filtrowania Grupy Kont"
+
+msgid "No Dimension Filter"
+msgstr "Bez Filtrowania Przekrojowego"
+
+msgid "No Customer Filter"
+msgstr "Bez filtrowania"
+
+msgid "No Supplier Filter"
+msgstr "Bez filtrowania"
+
+msgid "No Location Filter"
+msgstr "Bez filtrowania"
+
+msgid "No Category Filter"
+msgstr "Bez Filtrowania Kategorii"
+
+msgid "No Class Filter"
+msgstr "Brak filtru"
+
+msgid "No Areas Filter"
+msgstr "Brak Filtru"
+
+msgid "No Sales Folk Filter"
+msgstr "Bez Filtrowania Sprzedawcy"
+
+msgid "No Users Filter"
+msgstr "Wszyscy"
+
+msgid "Unsupported image file format."
+msgstr "Niewspierany format pliku."
+
+msgid "Main Menu"
+msgstr "Menu G³ówne"
+
+msgid "Dashboard"
+msgstr "Panel"
+
+msgid "Preferences"
+msgstr "Ustawienia wy¶wietlania"
+
+msgid "Change Password"
+msgstr "Zmieñ has³o"
+
+msgid "Logout"
+msgstr "Wylogowanie"
+
+msgid "Help"
+msgstr "Dokumentacja"
+
+msgid "Change password"
+msgstr "Zmieñ has³o"
+
+msgid "Theme:"
+msgstr "Temat graf.:"
+
+msgid "&Human Resources"
+msgstr "&HR"
+
+msgid "Transactions"
+msgstr "Transakcje"
+
+msgid "Attenda&nce"
+msgstr "Obec&no¶æ"
+
+msgid "Pay&slip Entry"
+msgstr "Pa&ski p³acowe"
+
+msgid "Document E&xpiration"
+msgstr "D&okumenty pracownicze"
+
+msgid "&Payment Advice"
+msgstr "Zlecenia Wy&p³at"
+
+msgid "Employee &Advances"
+msgstr "Z&aliczki pracownicze"
+
+msgid "Inquiries and Reports"
+msgstr "Zestawienia i Raporty"
+
+msgid "&Timesheet"
+msgstr "&Plan pracy"
+
+msgid "Employee Transaction In&quiry"
+msgstr "Przeszukiwanie W&yp³at"
+
+msgid "Employee Document Inq&uiry"
+msgstr "Przeszukiwanie &Dokumentów"
+
+msgid "Employee &Reports"
+msgstr "&Raporty Pracownicze"
+
+msgid "Maintenance"
+msgstr "Pielêgnacja"
+
+msgid "&Employees"
+msgstr "&Pracownicy"
+
+msgid "Document T&ypes"
+msgstr "T&ypy Dokumentów"
+
+msgid "&Departments"
+msgstr "&Oddzia³y"
+
+msgid "Manage &Overtime"
+msgstr "Na&dgodziny"
+
+msgid "Lea&ve Types"
+msgstr "Typy &urlopów"
+
+msgid "De&fault Settings"
+msgstr "Ustawienia &Domy¶lne"
+
+msgid "&Job Positions"
+msgstr "&Stanowiska"
+
+msgid "Manage &Grades"
+msgstr "&Siatka p³ac"
+
+msgid "Pay Ele&ments"
+msgstr "Sk³&adowe Wyp³at"
+
+msgid "Pay Elements Allo&cation"
+msgstr "Alokacja &sk³adowych"
+
+msgid "Sa&lary Structure"
+msgstr "S&truktury p³ac"
+
+msgid "Human Resources"
+msgstr "HR"
+
+msgid "Employee entry"
+msgstr "Dane pracownika"
+
+msgid "Attendance entry"
+msgstr "Wprowadzanie obecno¶ci"
+
+msgid "Payslip entry"
+msgstr "Pasek p³ac"
+
+msgid "Hrm setup"
+msgstr "Ustawienia HR"
+
+msgid "Document reentered."
+msgstr "Dokument zmieniony."
+
+msgid "Date:"
+msgstr "Data dokumentu:"
+
+msgid "Reference:"
+msgstr "Numer Ewid:"
+
+msgid "Pay To:"
+msgstr "P³atne Dla:"
+
+msgid "Select Employee"
+msgstr "Wybierz pracownika"
+
+msgid "To the Order of:"
+msgstr "Do zamówienia:"
+
+msgid "Name:"
+msgstr "Nazwa:"
+
+msgid "From:"
+msgstr "Od:"
+
+msgid "Into:"
+msgstr "Do:"
+
+msgid "Pay Slip:"
+msgstr "Pasek:"
+
+msgid "Select payslip"
+msgstr "Wybierz pasek"
+
+msgid "Amount:"
+msgstr "Kwota:"
+
+msgid "Account Description"
+msgstr "Opis Konta"
+
+msgid "Dimension 1"
+msgstr "Przekrój 1"
+
+msgid "Dimension 2"
+msgstr "Przekrój 2"
+
+msgid "Edit document line"
+msgstr "Edytuj wiersz dokumentu"
+
+msgid "Remove line from document"
+msgstr "Usuñ liniê z dokumentu"
+
+#, php-format
+msgid "Allocated amounts in %s:"
+msgstr "Rozliczane kwoty w %s:"
+
+msgid "Transaction Type"
+msgstr "Typ Transakcji"
+
+msgid "Ref"
+msgstr "Nr Ewid"
+
+msgid "Other Allocations"
+msgstr "Inne Rozliczenia"
+
+msgid "None"
+msgstr "Brak"
+
+msgid "Total Amount:"
+msgstr "Razem warto¶æ:"
+
+msgid "Male"
+msgstr "Mê¿czyzna"
+
+msgid "Female"
+msgstr "Kobieta"
+
+msgid "Other"
+msgstr "Inna"
+
+msgid "Pay From"
+msgstr "P³atne Od"
+
+msgid "To:"
+msgstr "Do:"
+
+msgid "Pay To"
+msgstr "P³atne Do"
+
+msgid "Select employee"
+msgstr "Wybierz pracownika"
+
+msgid "Pay Basis:"
+msgstr "Naliczanie:"
+
+msgid "Monthly salary"
+msgstr "Wynagrodzenie Miesiêczne"
+
+msgid "Daily wages"
+msgstr "Stawki dizenne"
+
+msgid "Payslip No:"
+msgstr "Pasek Nr:"
+
+msgid "days"
+msgstr "dni"
+
+msgid "day"
+msgstr "dzieñ"
+
+msgid "hours"
+msgstr "godzin"
+
+msgid "hour"
+msgstr "godzina"
+
+msgid "Work days:"
+msgstr "Dni pracuj±ce:"
+
+msgid "Leave hours:"
+msgstr "Godziny wolne:"
+
+msgid "This employee does not belong to any department"
+msgstr "Ten praciwnik nie jest zwi±zany z rzadnym oddzia³em"
+
+msgid "Basic account has not been set for department"
+msgstr "Nie wybrano g³ównego konta dla oddzia³u"
+
+msgid "Basic account has not been set for job position"
+msgstr "Nie wybrano g³ównego konta dla stanowiska"
+
+#, php-format
+msgid "non-working period of staff #%d"
+msgstr "czas wolny dla personelu #%d"
+
+msgid "Edit journal line"
+msgstr "Zmieñ liniê dziennika"
+
+msgid "Remove line from journal"
+msgstr "Usuñ liniê dziennika"
+
+msgid "Total Salary"
+msgstr "P³aca Razem"
+
+msgid "Confirm changes"
+msgstr "Zatwierd¼ zmiany"
+
+msgid "Cancel changes"
+msgstr "Anuluj zmiany"
+
+msgid "Add Item"
+msgstr "Dodaj Pozycjê"
+
+msgid "Add new line to journal"
+msgstr "Dodaj now± liniê do dziennika"
+
+msgid "All Payslip"
+msgstr "Wszystkie Paski"
+
+msgid "Monday"
+msgstr "Poniedzia³ek"
+
+msgid "Tuesday"
+msgstr "Wtorek"
+
+msgid "Wednesday"
+msgstr "¦roda"
+
+msgid "Thursday"
+msgstr "Czwartek"
+
+msgid "Friday"
+msgstr "Pi±tek"
+
+msgid "Saturday"
+msgstr "Sobota"
+
+msgid "Sunday"
+msgstr "Niedziela"
+
+msgid "Employee Transaction"
+msgstr "Transkacja pracownika"
+
+msgid "Enter reference fragment or leave empty"
+msgstr "Podaj fragment identyfikatora lub pozostaw puste"
+
+msgid "Enter memo fragment or leave empty"
+msgstr "Podaj fragment memo lub pozostaw puste"
+
+msgid "All departments"
+msgstr "Wszystkie oddzia³y"
+
+msgid "All employees"
+msgstr "Wszyscy Pracownicy"
+
+msgid "Only unpaid:"
+msgstr "Tylko niezap³acone:"
+
+msgid "Search"
+msgstr "Szukaj"
+
+msgid "Payslip"
+msgstr "Pasek"
+
+msgid "Employee advance"
+msgstr "Zaliczka"
+
+msgid "Payment advice"
+msgstr "Zlecenie wyp³aty"
+
+msgid "Print this Payslip"
+msgstr "Drukuj ten Pasek"
+
+msgid "Trans #"
+msgstr "Nr Trans."
+
+msgid "Employee ID"
+msgstr "ID pracownika"
+
+msgid "Employee Name"
+msgstr "Nazwisko Pracownika"
+
+msgid "Payslip No"
+msgstr "PAsek Nr"
+
+msgid "Pay from"
+msgstr "P³atne od"
+
+msgid "Pay to"
+msgstr "P³atne do"
+
+msgid "Marked items are overdue."
+msgstr "Zaznaczono transakcje opó¼nione."
+
+msgid "Timesheet Inquiry"
+msgstr "Przeszukiwanie harmonogramów"
+
+msgid "Regular time"
+msgstr "Czas podstawowy"
+
+msgid "Id"
+msgstr "Id"
+
+msgid "Manage Pay Elements"
+msgstr "Sk³adniki Wynagrodzenia"
+
+msgid "Element Name cannot be empty."
+msgstr "Nazwa sk³adnika nie mo¿e byæ pusta."
+
+msgid "Selected account is already used."
+msgstr "Wybrane konto jest ju¿ u¿ywane. Wybierz inne konto."
+
+msgid "Pay element has been added."
+msgstr "Dodano nowy element sk³adowy wynagrodzenia."
+
+msgid "The selected pay element has been updated."
+msgstr "Wybrany element sk³adowy wynagrodzenia zosta³ zaktualizowany."
+
+msgid "Cannot delete this account because payroll rules have been created using it."
+msgstr "Nie mo¿na usun±æ konta, poniewa¿ ju¿ utworzono regu³y p³ac u¿ywaj±ce tego konta."
+
+msgid "Selected account has been deleted"
+msgstr "Wybrane konto zosta³o usuniête"
+
+msgid "Element"
+msgstr "Element"
+
+msgid "Element Name:"
+msgstr "Nazwa Sk³adnika:"
+
+msgid "Select Account:"
+msgstr "Wybierz Konto:"
+
+msgid "Account:"
+msgstr "Konto:"
+
+msgid "The entered date is invalid."
+msgstr "Podano nieprawid³ow± datê."
+
+msgid "Cannot make attendance for the date in the future."
+msgstr "Nie mo¿na rejestrowaæ obecno¶ci z dat± przysz³±."
+
+msgid "Attendance input data must be greater than 0, less than 24 hours and formatted in <b>HH:MM</b> or <b>Integer</b>, example - 02:25 , 2:25, 8, 23:59 ..."
+msgstr "Czas pracy musi byæ wiêksze ni¿ zero, mniejsze ni¿ 24, i podany w formacie  <b>HH:MM</b> lub <b>Integer</b>, np.: - 02:25 , 2:25, 8, 23:59 ..."
+
+msgid "Employees Attendance"
+msgstr "Obecno¶æ Pracownika"
+
+msgid "From"
+msgstr "Od"
+
+msgid "Attendance date begin"
+msgstr "Data pocz±tkowa"
+
+msgid "To"
+msgstr "Do"
+
+msgid "Attendance date end"
+msgstr "Data koñcowa"
+
+msgid "For department"
+msgstr "Dla oddzia³u"
+
+msgid "Bulk"
+msgstr "Zestawienie"
+
+msgid "Record all as regular work"
+msgstr "Zarejestruj wszystko jako pracê regularn±"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Employee"
+msgstr "Pracownik"
+
+msgid "Leave Type"
+msgstr "Typ Zwolnienia"
+
+msgid "Select Leave Type"
+msgstr "Wybierz Typ Zwolnienia:"
+
+msgid "Save attendance"
+msgstr "Zapisz obecno¶æ"
+
+msgid "There are no employees for attendance."
+msgstr "Brak zarejestrowanych pracowników."
+
+msgid "The selected date range includes a date that has been approved, please select another date range."
+msgstr "Wybrany zakres dat zawiera okres ju¿ zatwierdzony. Wybierz inny zakres dat."
+
+msgid "Attendance has been saved."
+msgstr "Obecno¶æ zapisana."
+
+msgid "Nothing added"
+msgstr "Nic nie dodano"
+
+msgid "The number of month working days must be between 0 and 31."
+msgstr "Ilo¶æ dni pracuj±cych w miesi±cu musi byæ w zakresie 0 do 31."
+
+msgid "The number of working hours must be between 0 and 24."
+msgstr "Wymiar godzinowy musi byæ w zakresie  0 do 100."
+
+#, php-format
+msgid "Grade %s is being used by employees, cannot select a lower grade"
+msgstr "Ranga %s jest ju¿ u¿ywana w danych pracowniczych. Nie mo¿na ustaliæ ni¿szej rangi."
+
+msgid "The Payroll setup has been updated."
+msgstr "Ustawienia p³ac zosta³y zaktualizowane."
+
+msgid "Payroll default Settings"
+msgstr "Domy¶lne ustawienia p³ac"
+
+msgid "General Ledger"
+msgstr "Ksiêga G³ówna"
+
+msgid "Accrued Payroll Expense Account:"
+msgstr "Konto Rozliczeniowe Wyp³at:"
+
+msgid "Payroll Expense Account:"
+msgstr "Konto Kosztów P³ac:"
+
+msgid "Use Salary Basic Account"
+msgstr "U¿yj Podstawowego Konta Wynagrodzeñ"
+
+msgid "Overtime account:"
+msgstr "Konto nadgodzin:"
+
+msgid "Working time parameters"
+msgstr "Parametry czasu pracy"
+
+msgid "Work days per month:"
+msgstr "Liczba dni pracuj±cych w miesi±cu:"
+
+msgid "Work hours per day:"
+msgstr "Dzienny wymiar godzinowy:"
+
+msgid "Weekend:"
+msgstr "Koniec tygodnia:"
+
+msgid "Others"
+msgstr "Inne"
+
+msgid "Salary based on department:"
+msgstr "P³aca powi±zana z oddzia³em:"
+
+msgid "Number of Grades:"
+msgstr "Ilo¶æ rang pracowniczych:"
+
+msgid "Manage Department"
+msgstr "Zarz±dzanie Oddzia³ami"
+
+msgid "The Department name cannot be empty."
+msgstr "Nazwa oddzia³u nie mo¿e byæ pusta."
+
+msgid "Please select basic account"
+msgstr "Proszê wybraæ konto podstawowe."
+
+msgid "Salary Basic Account must be an expenses account."
+msgstr "Konto wynagrodzenia podstawowego musi byæ kontem kosztowym."
+
+msgid "Selected department has been updated"
+msgstr "Dane oddzia³u zosta³y zaktualizowane"
+
+msgid "New department has been added"
+msgstr "Dodano nowy oddzia³"
+
+msgid "The Department cannot be deleted."
+msgstr "Oddzia³ nie mo¿e byæ usuniêty."
+
+msgid "Selected department has been deleted"
+msgstr "Wybrany oddzia³ zosta³ usuniêty"
+
+msgid "Department Name"
+msgstr "Nazwa oddzia³u"
+
+msgid "Salary Basic Account"
+msgstr "Podstawowe Konto Wynagrodzeñ:"
+
+msgid "Department Name:"
+msgstr "Nazwa Oddzia³u:"
+
+msgid "Select basic account"
+msgstr "Wybierz konto bazowe"
+
+msgid "Manage Document Categories"
+msgstr "Zarz±dzanie Kategoriami Dokumentów."
+
+msgid "The document type description cannot be empty."
+msgstr "Typ dokumentu nie mo¿e byæ pusty."
+
+msgid "Days before expiry must be a number."
+msgstr "Minimalny okres wa¿no¶ci musi byæ liczb± dodatni±."
+
+msgid "Selected document type has been updated"
+msgstr "Wybrany typ dokumentu zosta³ zaktualizowany"
+
+msgid "New document type item has been added"
+msgstr "Nowy typ dokumentu zosta³ dodany"
+
+msgid "This document category cannot be deleted."
+msgstr "Ta kategoria dokumentu nie mo¿e byæ usuniêta."
+
+msgid "Selected document category has been deleted"
+msgstr "Wybrana kategoria zosta³a usuniêta."
+
+msgid "Description"
+msgstr "Opis"
+
+msgid "Alert Before Expiry"
+msgstr "Powiadomienie przed utrat± wa¿no¶ci"
+
+msgid "Description:"
+msgstr "Opis:"
+
+msgid "Alert before expiry:"
+msgstr "Powiadomienie przed utrat± wa¿no¶ci:"
+
+msgid "Employee Payment Entry"
+msgstr "Wprowadzanie Zlecenia Wyp³aty"
+
+msgid "Employee Advance Entry"
+msgstr "Wprowadzenie Zlecenia Wyp³aty"
+
+msgid "Employee Deposit Entry"
+msgstr "Wprowadzanie depozytu pracowniczego"
+
+msgid "Modify Bank Account Entry"
+msgstr "Modyfikacja Wyp³aty"
+
+msgid "Modify Bank Deposit Entry"
+msgstr "Modyfikacja Przelewu"
+
+msgid "Payment advice already exists"
+msgstr "Zleceni przelewu ju¿ jest zdefiniowane"
+
+msgid "Payment Advices"
+msgstr "Zlecenia Wyp³aty"
+
+msgid "Payslip number does not exist"
+msgstr "Podany numer paska nie istnieje"
+
+msgid "There are no bank accounts defined in the system."
+msgstr "Nie zdefiniowano rachunków bankowych."
+
+#, php-format
+msgid "Employee Payment Advice #%d has been entered"
+msgstr "Zlecenie Wyp³aty nr %d zosta³o wprowadzone."
+
+msgid "&View the GL Postings for this Payment"
+msgstr "Poka¿ Zapisy &Ksiêgowe dla tej p³atno¶ci"
+
+msgid "Enter Another &Payment"
+msgstr "Wprowad¼ &Nastêpn± Wyp³atê"
+
+msgid "Enter A &Deposit"
+msgstr "Wprowad¼ &Wp³atê"
+
+msgid "Add an Attachment"
+msgstr "Dodaj Za³±cznik do Dokumentu"
+
+#, php-format
+msgid "Payment #%d has been modified"
+msgstr "P³atno¶æ nr %d zosta³a zmodyfikowana."
+
+#, php-format
+msgid "Deposit #%d has been entered"
+msgstr "P³atno¶æ nr %d zosta³a wprowadzona."
+
+msgid "View the GL Postings for this Deposit"
+msgstr "Poka¿ Zapisy Ksiêgowe dla Tej Wp³aty"
+
+msgid "Enter Another Deposit"
+msgstr "Wprowad¼ Nastêpn± Wp³atê"
+
+msgid "Enter A Payment"
+msgstr "Wprowad¼ P³atno¶æ"
+
+#, php-format
+msgid "Deposit #%d has been modified"
+msgstr "Wp³ata nr %d zosta³a zmodyfikowana."
+
+msgid "&View the GL Postings for this Deposit"
+msgstr "Poka¿ Zapisy Ksiêgowe dla Tej Wp³aty"
+
+msgid "Enter Another &Deposit"
+msgstr "Wprowad¼ Nastêpn± Wp³atê"
+
+msgid "Enter A &Payment"
+msgstr "Wprowad¼ P³atno¶æ"
+
+msgid "Payment advice gl entry For Payslip #"
+msgstr "Ksiêgowania Zlecenia Wyp³±ty dla paska #"
+
+msgid "You must enter at least one payment line."
+msgstr "Musisz wprowadziæ co najmniej jedn± pozycjê p³atno¶ci."
+
+msgid "The total bank amount cannot be 0."
+msgstr "Kwota nie mo¿e byæ równa zeru."
+
+#, php-format
+msgid "The total bank amount exceeds allowed limit (%s)."
+msgstr "Kwota powoduje zej¶cie salda poni¿ej zera. Obecne saldo wynosi: (%s)."
+
+#, php-format
+msgid "The bank transaction would result in exceed of authorized overdraft limit for transaction: %s #%s on %s."
+msgstr "Wprowadzenie transakcja spowodowa³oby przekroczenie debetu dla transakcji: %s #%s w dniu %s."
+
+msgid "The entered date for the payment is invalid."
+msgstr "Podana data p³atno¶ci jest nieprawid³owa."
+
+msgid "The entered date is out of fiscal year or is closed for further data entry."
+msgstr "Podana data jest poza rokiem fiskalnym, jest zamkniêta dla dalszych zapisów lub u¿ytkownik nie ma prawa wprowadzania dokumentów w roku fiskalnym innym ni¿ bie¿±cy."
+
+msgid "You have to select a payslip."
+msgstr "Musisz wybraæ pasek."
+
+msgid "You have to select an employee."
+msgstr "Musisz wybraæ pracownika."
+
+msgid "Settled amount have to be positive number."
+msgstr "Kwota wp³aty musi byæ liczb± dodatni±."
+
+msgid "Payment cannot be processed because the amount allocated is more than the total payslip amount"
+msgstr "Wyp³ata nie mo¿e byæ wprowadzona poniewa¿ rozliczana kwota przekracza kwotê paska."
+
+msgid "Pay amount have to be positive number."
+msgstr "Kwota wyp³aty musi byæ liczb± dodatni±."
+
+msgid "Employee advances have been allocated, no bank payment has been made."
+msgstr "Zaliczki zosta³y ju¿ rozliczone, przelew nie zostanie wykonany."
+
+msgid "The amount entered is not a valid number or is less than zero."
+msgstr "Podana warto¶æ jest nieprawid³owa b±d¼ mniejsza od zera."
+
+msgid "The exchange rate cannot be zero or a negative number."
+msgstr "Kurs wymiany musi byæ liczb± dodatni±."
+
+msgid "Generate Payment Items"
+msgstr "Generuj Pozycje Wyp³aty"
+
+msgid "Generate Payment GL Items"
+msgstr "Generuj Ksiêgowania Wyp³aty"
+
+msgid "Payment Items"
+msgstr "Pozycje Wyp³aty"
+
+msgid "Deposit Items"
+msgstr "Pozycje Wp³aty"
+
+msgid "Process Payment"
+msgstr "Wprowad¼ Wyp³atê"
+
+msgid "Process Deposit"
+msgstr "Wprowad¼ Wp³atê"
+
+msgid "Employee Attach Documents"
+msgstr "Do³±czanie Dokumentów Pracownika"
+
+msgid "There are no <b>Document Types</b> defined in the system"
+msgstr "W systemie jeszcze nie zdefiniowano <b>Typów Dokumentów</b>"
+
+msgid "Select an employee."
+msgstr "Wybierz pracownika."
+
+msgid "Select a document type."
+msgstr "Wybierz typ dokumentu."
+
+msgid "The document description cannot be empty."
+msgstr "Opis faktury okresowej nie mo¿e byæ pusty."
+
+msgid "Issue date cannot be after expiry date."
+msgstr "Data wystawienia musi poprzedzaæ datê wa¿no¶ci"
+
+msgid "Select attachment file."
+msgstr "Wybierz plik za³±cznika."
+
+msgid "The file size is over the maximum allowed."
+msgstr "Rozmiar pliku jest zbyt du¿y."
+
+msgid "Attachment has been inserted."
+msgstr "Dokument zosta³ do³±czony."
+
+msgid "Attachment has been updated."
+msgstr "Dokument zosta³ zaktualizowany."
+
+msgid "Attachment has been deleted."
+msgstr "Dokument zosta³ usuniêty."
+
+msgid "Enter search string:"
+msgstr "Wprowad¼ wyszukiwany tekst:"
+
+msgid "Enter fragment or leave empty"
+msgstr "Podaj fragment lub pozostaw puste"
+
+msgid "All document type"
+msgstr "Wszystkie Typy Dokumentu"
+
+msgid "Alert:"
+msgstr "Powiadomienie:"
+
+msgid "Not Alert:"
+msgstr "Brak Powiadomienia:"
+
+msgid "Expired:"
+msgstr "Wygasa:"
+
+msgid "Issued:"
+msgstr "Wydany:"
+
+msgid "Alert"
+msgstr "Powiadomienie"
+
+msgid "Click to edit this document"
+msgstr "Kliknij ¿eby edytowaæ dokument"
+
+msgid "View"
+msgstr "Poka¿"
+
+msgid "Download"
+msgstr "¦ci±gnij kopiê"
+
+msgid "Doc No"
+msgstr "Dok Nr"
+
+msgid "Document Type"
+msgstr "Typ Dokumentu"
+
+msgid "Document Title"
+msgstr "Tytu³ Dokumentu"
+
+msgid "Issue Date"
+msgstr "Data Wystawienia:"
+
+msgid "Expiry Date"
+msgstr "Data wa¿no¶ci"
+
+msgid "Filename"
+msgstr "Nazwa pliku"
+
+msgid "Size"
+msgstr "Wielko¶æ"
+
+msgid "Filetype"
+msgstr "Typ pliku"
+
+msgid "Marked rows are nearly expired"
+msgstr "Zaznaczone dokumenty wkrótce wygasaj±."
+
+msgid "Marked rows are expired"
+msgstr "Zaznaczone dokumenty s± ju¿ niewa¿ne."
+
+msgid "Document Number:"
+msgstr "Numer Dokumentu:"
+
+msgid "Document type:"
+msgstr "Typ Dokumentu:"
+
+msgid "Select document type"
+msgstr "Wybierz typ dokumentów"
+
+msgid "Document title:"
+msgstr "Tytu³ Dokumentu:"
+
+msgid "Issue date:"
+msgstr "Data wystawienia:"
+
+msgid "Expiry date:"
+msgstr "Data wa¿no¶ci:"
+
+msgid "Attached File:"
+msgstr "Za³±cznik:"
+
+msgid "Error uploading file."
+msgstr "B³±d przy wczytywaniu pliku."
+
+msgid "Only graphics files can be uploaded"
+msgstr "Mo¿na za³adowaæ tylko pliki graficzne"
+
+msgid "Only graphics files are supported - a file extension of .jpg, .png or .gif is expected"
+msgstr "System obs³uguje tylko obrazki w formacie jpeg, png lub gif. Oczekiwana jest nazwa pliku z roszerzeniem .jpg/.png/.gif"
+
+msgid "The file size is over the maximum allowed. The maximum size allowed in KB is"
+msgstr "Rozmiar pliku jest zbyt du¿y. Maksymalna dozwolona wielko¶æ pliku w KB to"
+
+msgid "The existing image could not be removed"
+msgstr "Istniej±cy plik nie mo¿e byæ usuniêty"
+
+msgid "The employee first name must be entered."
+msgstr "Imiê pracownika musi byæ wprowadzone."
+
+msgid "Employee last name must be entered."
+msgstr "Nazwisko pracoewnika musi byæ wprowadzone."
+
+msgid "Invalid email."
+msgstr "B³êdny format emaila."
+
+msgid "Invalid birth date."
+msgstr "B³êdna data urodzenia."
+
+msgid "Invalid hire date."
+msgstr "B³êdna data zatrudnienia."
+
+msgid "Hire date can not be before Birth date."
+msgstr "Data zatrudnienia nie mo¿e byæ wcze¶niejsza ni¿ data urodzenia."
+
+msgid "Basic salary amount must be a positive number"
+msgstr "P³aca podstawowa musi byæ liczb± dodatni±."
+
+msgid "Staff's Job Position must be selected to use Personal Salary Structure"
+msgstr "Musisz wybraæ stanowisko aby móc ustaliæ strukturê p³acy"
+
+msgid "Invalid release date."
+msgstr "B³êdna data wydania."
+
+msgid "Not hired"
+msgstr "Nie zatrudniony"
+
+msgid "Not selected"
+msgstr "Nie wybrany"
+
+msgid "Enter Search String:"
+msgstr "Wprowad¼ tekst:"
+
+msgid "All Positions"
+msgstr "Wszystkie Stanowiska"
+
+msgid "All Grades"
+msgstr "Wszystkie Rangi"
+
+msgid "Show resigned:"
+msgstr "Poka¿ zwolnionych:"
+
+msgid "Name"
+msgstr "Nazwa"
+
+msgid "Gender"
+msgstr "P³eæ"
+
+msgid "Mobile"
+msgstr "Telefon kom."
+
+msgid "Birth"
+msgstr "Data urodzenia"
+
+msgid "Hired Date"
+msgstr "Data Zatrudnienia"
+
+msgid "Department"
+msgstr "Odddzia³"
+
+msgid "No employee defined."
+msgstr "Brak zdefiniowanych pracowników."
+
+msgid "Image File:"
+msgstr "Plik Obrazka (.jpg)"
+
+msgid "Delete Image:"
+msgstr "Usuñ Obrazek:"
+
+msgid "Personal Information"
+msgstr "Dane Osobiste"
+
+msgid "Employee Id:"
+msgstr "Id Pracownika:"
+
+msgid "First Name:"
+msgstr "Imiê:"
+
+msgid "Last Name:"
+msgstr "Nazwisko:"
+
+msgid "Gender:"
+msgstr "P³eæ"
+
+msgid "Address:"
+msgstr "Adres:"
+
+msgid "Mobile:"
+msgstr "Tel. kom.:"
+
+msgid "e-Mail:"
+msgstr "e-Mail:"
+
+msgid "Birth Date:"
+msgstr "Data urodzenia:"
+
+msgid "National ID:"
+msgstr "Numer PESEL:"
+
+msgid "Passport:"
+msgstr "Dowód:"
+
+msgid "Bank Name/Account:"
+msgstr "Numer/Nazwa Konta:"
+
+msgid "Tax ID Number:"
+msgstr "Numer NIP:"
+
+msgid "Job Information"
+msgstr "Imformacje o Zatrudnieniu"
+
+msgid "Notes:"
+msgstr "Uwagi:"
+
+msgid "Hire Date:"
+msgstr "Data Zatrudnienia:"
+
+msgid "Department:"
+msgstr "Oddzia³:"
+
+msgid "Set hire date first"
+msgstr "Najpierw zapisz datê zatrudnienia"
+
+msgid "Job Position:"
+msgstr "Stanowisko:"
+
+msgid "Salary Grade:"
+msgstr "Ranga:"
+
+msgid "Basic"
+msgstr "Podstawowy"
+
+msgid "Resigned:"
+msgstr "Zwolniony:"
+
+msgid "Release Date:"
+msgstr "Data Wydania:"
+
+msgid "Pay Elements"
+msgstr "Sk³adniki Wynagrodzenia"
+
+msgid "Enter negative amount for deduction, positive for earning"
+msgstr "Wprowad¼ warto¶ci ujemne dla odpisów, dodatnie dla dodatków."
+
+msgid "Use Personal Salary Structure:"
+msgstr "U¿yj Osobistej Struktury P³acy:"
+
+msgid "Basic Salary Amount:"
+msgstr "Kwota Bazowa Wyp³aty:"
+
+msgid "Update Employee"
+msgstr "Zapisz Dane Pracownika"
+
+msgid "Update employee details"
+msgstr "Zmieñ dane pracownika"
+
+msgid "Select this employee and return to document entry."
+msgstr "Wybierz tego pracownika i wróæ do edycji dokumentu."
+
+msgid "Delete Employee"
+msgstr "Usuñ Dane Pracownika"
+
+msgid "Delete employee data if have been never used"
+msgstr "Usuñ dane pracownika je¶li nie s± nigdzie u¿ywane"
+
+msgid "Add New Employee Details"
+msgstr "Wprowad¼ Dane Nowego Pracownika"
+
+msgid "Employee details has been updated."
+msgstr "Dane pracownika zosta³y zaktualizowane."
+
+msgid "A new employee has been added."
+msgstr "Dodano nowego pracownika."
+
+msgid "Employee details has been deleted."
+msgstr "Dane pracownika zosta³y usuniête."
+
+msgid "Manage Employees"
+msgstr "Zarz±dzanie pracownikami"
+
+msgid "Employees &List"
+msgstr "&Lista Pracowników"
+
+msgid "&Add/Edit Employee"
+msgstr "&Dodaj/Zmieñ Dane Pracownika"
+
+msgid "Manage Grades"
+msgstr "Zarz±dzanie Rangami"
+
+msgid "Pay amount cannot be a negative number"
+msgstr "Warto¶æ p³acy musi byæ liczb± dodatni±."
+
+msgid "Grade table has been updated"
+msgstr "Siatka p³ac zosta³a zmodyfikowana"
+
+msgid "Grade table for selected job position cannot be deleted."
+msgstr "Siatka p³ac dla wybranego stanowiska nie mo¿e byæ usuniêta"
+
+msgid "Grade table of selected job position has been deleted"
+msgstr "Siatka p³ac dla wybranego stanowiska zosta³± usuniêta"
+
+msgid "Please define Job Positions First"
+msgstr "Najpierw zdefiniuj Stanowiska"
+
+msgid "Job Position"
+msgstr "Stanowisko"
+
+msgid "Basic Amount"
+msgstr "P³aca Podstawowa"
+
+msgid "Grade"
+msgstr "Ranga"
+
+msgid "Basic Amount:"
+msgstr "P³aca Podstawowa:"
+
+msgid "Leave Types"
+msgstr "Typy Urlopów"
+
+msgid "Salary rate must be a number."
+msgstr "Odp³atno¶æ musi byæ liczb± dodatni±."
+
+msgid "The Leave type name cannot be empty."
+msgstr "Nazwa typu urlopu nie mo¿e byæ pusta."
+
+msgid "The Leave type code cannot be empty and only allows alphabet letters."
+msgstr "Kod typu urlopu musi siê sk³adaæ z jednej lub wiêcej liter."
+
+msgid "Selected leave type has been updated"
+msgstr "Wybrany typ urlopu zosta³ zaktualizowany"
+
+msgid "New leave type has been added"
+msgstr "Dodano nowy typ urlopu"
+
+msgid "This leave type cannot be deleted."
+msgstr "Ten typ urlopu nie mo¿e byæ usuniêty."
+
+msgid "Selected leave type has been deleted"
+msgstr "Wybrany typ urlopu zosta³ usuniêty"
+
+msgid "Leave Type Name"
+msgstr "Nazwa Typu Urlopu"
+
+msgid "Leave Type Code"
+msgstr "Kod Typu Urlopu"
+
+msgid "Salary Rate (%)"
+msgstr "Odp³atno¶æ (%)"
+
+msgid "Salary rate:"
+msgstr "Odp³atno¶æ:"
+
+msgid "Leave Type Name:"
+msgstr "Nazwa Typu Urlopu"
+
+msgid "Leave Type Code:"
+msgstr "Kod Typu Urlopu:"
+
+msgid "Overtime Rates"
+msgstr "Stawki Nadgodzinowe"
+
+msgid "The overtime rate cannot be empty."
+msgstr "Stawka nie mo¿e byæ pusta."
+
+msgid "Overtime rate must be a number."
+msgstr "Podana stawka musi byæ numeryczna."
+
+msgid "The overtime name cannot be empty."
+msgstr "Nazwa Stawki nie mo¿e byæ pusta."
+
+msgid "Selected overtime has been updated"
+msgstr "Wybrana stawka zosta³a zmieniona"
+
+msgid "New overtime item has been added"
+msgstr "Dodano now± stawkê nadgodzinow±"
+
+msgid "This overtime cannot be deleted."
+msgstr "Ta stawka nie mo¿e byæ usuniêta."
+
+msgid "Selected overtime item has been deleted"
+msgstr "Wybrana stawka zosta³a usuniêta."
+
+msgid "Overtime Name"
+msgstr "Nazwa Stawki:"
+
+msgid "Overtime Rate"
+msgstr "Stawka Nadgodzinowa"
+
+msgid "Overtime rate:"
+msgstr "Stawka Nadgodzinowa:"
+
+msgid "Overtime Name:"
+msgstr "Nazwa Stawki:"
+
+msgid "Accounts have been updated, some accounts might not have been deleted because Salary Structure using them."
+msgstr "Konta zosta³y zaktualizowane, niektóre mog³y pozostaæ nie usuniête ze wzglêdu na ich u¿ycie w Strukturach P³ac"
+
+msgid "Select Job Position first."
+msgstr "Najpierw wybierz stanowisko."
+
+msgid "Pay Element"
+msgstr "Sk³adnik Wynagrodzenia"
+
+msgid "Save"
+msgstr "Zapisz"
+
+msgid "Save payroll structure"
+msgstr "Zapisz strukturê wynagrodzenia"
+
+msgid "Update payroll rules data"
+msgstr "Zmieñ dane zasad wynagrodzenia"
+
+msgid "Select this job position and return to document entry."
+msgstr "Wybierz to stanowisko i wróæ do edycji dokumentu."
+
+msgid "Delete payroll rules if have been never used"
+msgstr "Usuñ zasady wynagrodzenia je¶li nie s± nigdzie u¿ywane"
+
+msgid "Selected payroll rules have been deleted."
+msgstr "Wybrane zasady wynagrodzenia zosta³y usuniête"
+
+msgid "Manage Payroll Rule"
+msgstr "Zasady Wynagrodzenia"
+
+msgid "Select Job Position"
+msgstr "Wybór Stanowiska"
+
+msgid "Show inactive:"
+msgstr "Poka¿ nieaktywne:"
+
+msgid "Define Job Positions first."
+msgstr "ZNajpierw zdefiniuj Stanowiska"
+
+#, php-format
+msgid "Modifying Employee Payslip #%d."
+msgstr "Modyfikacja Paska Wyngrodzeñ nr %d."
+
+msgid "Modifying Employee Payslip"
+msgstr "Modyfukacja PAska Wynagrodzeñ"
+
+msgid "Employee Payslip Entry"
+msgstr "Wprowadzanie Paska Wynagrodzeñ"
+
+#, php-format
+msgid "Payslip #%d has been entered"
+msgstr "Pasek nr %d zosta³ wprowadzony."
+
+msgid "&View this Transaction"
+msgstr "&Poka¿ Transakcjê"
+
+msgid "Make Payment &Advice for this Payslip"
+msgstr "&Polecenie zap³aty do tego Paska"
+
+msgid "Enter &New Payslip"
+msgstr "Wprowad¼ &Nastêpny Pasek"
+
+#, php-format
+msgid "Employee Payslip #%d has been updated"
+msgstr "Pasek Wynagrodzeñ nr %d zosta³ zaktualizowany"
+
+msgid "&View this Journal Entry"
+msgstr "Poka¿/Drukuj wprowadzony &Dokument Ksiêgowy"
+
+msgid "Return to Payslip &Inquiry"
+msgstr "Powrót do &Przegl±du Pasków Wynagrodzeñ"
+
+msgid "You can edit directly only journal entries created via Journal Entry page."
+msgstr "Edycji podlegaj± tylko zapisy utworzone przez stronê Pozycje Dziennika."
+
+msgid "Entry &New Journal Entry"
+msgstr "Wprowad¼ &Nastêpn± Pozycjê Dziennika"
+
+msgid "Employee not selected"
+msgstr "Nie wybrano pracownika"
+
+msgid "Selected date has already paid for this person"
+msgstr "Wybrana data dla tego pracownika jest ju¿ rozliczona."
+
+msgid "Selected period contains a period that has already been paid for this person"
+msgstr "Wybrany okres zawiera czas ju¿ rozliczony"
+
+msgid "End date cannot be before the start date"
+msgstr "Data koñcowa zakresu nie mo¿e byæ wcze¶niejsza ni¿ pocz±tkowa."
+
+msgid "Cannot pay for the date in the future."
+msgstr "Nie mo¿na rozliczaæ prac z przysz³o¶ci."
+
+msgid "Cannot pay for the date before hired date"
+msgstr "Nie mo¿na rozliczaæ p³ac sprzed pocz±tku okresu zatrudnienia"
+
+msgid "Selected Employee does not have a Job Position, please define it first."
+msgstr "Wybrany pracownik nie ma ustalonego stanowiska, popraw te dane."
+
+msgid "The Employee's Job Position does not have a structure, please define Salary Structure"
+msgstr "Stanowisko tego pracownika nie ma zdefiniowanej struktury wynagrodzenia. Najpierw zdefiniuj Struktury Wynagrodzeñ"
+
+msgid "You must enter at least one journal line."
+msgstr "Musisz wprowadziæ co najmniej jedn± pozycjê dziennika."
+
+msgid "The journal must balance (debits equal to credits) before it can be processed."
+msgstr "Pozycja musi byæ zbilansowana (Wn równe Ma) przed zapisaniem."
+
+msgid "Employee cannot getting paid for non-working period."
+msgstr "Wynagrodzenie za pracê w czasie wolnym nie przys³uguje."
+
+msgid "Dimension is closed."
+msgstr "Analityka jest zamkniêta."
+
+msgid "You must enter either a debit amount or a credit amount."
+msgstr "Musisz podaæ warto¶æ Winien albo warto¶æ Ma."
+
+msgid "The debit amount entered is not a valid number or is less than zero."
+msgstr "Podana warto¶æ jest nieprawid³owa b±d¼ mniejsza od zera."
+
+msgid "The credit amount entered is not a valid number or is less than zero."
+msgstr "Podana warto¶æ Winien jest nieprawid³owa b±d¼ mniejsza od zera."
+
+msgid "Cannot make a journal entry for a bank account. Use banking functions for bank transactions."
+msgstr "Nie mo¿na wprowadzaæ pozycji dziennika dla rachunku bankowego. Wykorzystaj do tego jedn± z opcji menu dla transakcji bankowych."
+
+msgid "Generate Payslip"
+msgstr "Wygeneruj Pasek"
+
+msgid "Generate Payslip For Process"
+msgstr "Generuj pasek"
+
+msgid "Rows"
+msgstr "Zapisy na Kontach"
+
+msgid "Process PaySlip"
+msgstr "Wprowad¼ Pasek"
+
+msgid "Process journal entry only if debits equal to credits"
+msgstr "Wprowad¼ Dokument do Dziennika"
+
+msgid "Cancels document entry or removes Gl items"
+msgstr "Przerywa wprowadzanie dokumentu lub ususwa zapsiy ksiêgowe"
+
+msgid "Manage Job Positions"
+msgstr "Stanowiska"
+
+msgid "Name field cannot be empty."
+msgstr "Nazwa nie mo¿e byæ pusta."
+
+msgid "Amount field value must be a positive number."
+msgstr "Kwota musi byæ liczb± dodatni±"
+
+msgid "Selected job position has been updated"
+msgstr "Wybrane stanowisko zosta³a zmienione"
+
+msgid "New job position has been added"
+msgstr "Dodano nowe stanowisko"
+
+msgid "This job position cannot be deleted."
+msgstr "Teo stanowisko nie mo¿e byæ usuniête."
+
+msgid "Selected job position has been deleted"
+msgstr "Wybrane stanowisko zosta³o usuniête"
+
+msgid "Salary amount"
+msgstr "Warto¶æ wynagrodzenia"
+
+msgid "Pay basis"
+msgstr "Naliczanie"
+
+msgid "Monthly"
+msgstr "Miesiêczne"
+
+msgid "Daily"
+msgstr "Dniówka"
+
+msgid "Position Name:"
+msgstr "Nazwa Stanowiska:"
+
+msgid "Salary Basic Account:"
+msgstr "Konto Wynagrodzenia Podstawowego:"
+
+msgid "Salary Basic Amount"
+msgstr "Kwota Wynagrodzenia Podstawowego"
+
+msgid "Daily wage"
+msgstr "Stawka dzienna"
+
+msgid "Manage Salary Structure"
+msgstr "Struktury P³ac"
+
+msgid "Select job position"
+msgstr "Wybór stanowiska"
+
+msgid "Only one amount (earning or deduction) is allowed per rule"
+msgstr "W danej regule tylko jedna kwota (wynagrodzenia lub obci±¿enia) jest dozwolona."
+
+msgid "Salary structure has been updated."
+msgstr "Struktura wyagrodzenia zosta³a zaktualizowana."
+
+msgid "Selected structure has been deleted."
+msgstr "Wybrana struktura wynagrodzenia zosta³a usuniêta."
+
+msgid "Monthly Earnings"
+msgstr "Zarobki Miesiêczne"
+
+msgid "Monthly Deductions"
+msgstr "Obci±¿enia Miesiêczne"
+
+msgid "Daily Earnings"
+msgstr "Zarobki Dzienne"
+
+msgid "Daily Deductions"
+msgstr "Obci±¿enia Dzienne"
+
+msgid "Basic Salary"
+msgstr "Wynagrodzenie Podstawowe"
+
+msgid "Save salary structure"
+msgstr "Zapisz strukturê wynagrodzenia"
+
+msgid "Update salary structure data"
+msgstr "Zaktualizouj strukturê wynagrodzenia"
+
+msgid "Delete salary structure if have been never used"
+msgstr "Usuñ struktur e wynagrodzenia je¶li nie jest nigdzie u¿ywana"
+
+msgid "Selected job position has not been assigned any pay element yet"
+msgstr "Nie dodano jeszcze ¿adnego sk³adnika wynagrodzenia"
+
+msgid "Before this function can be run, Job Positions must be defined and Pay Elements must be added."
+msgstr "Zanim u¿yjesz tej funkcji, musisz zdefinowaæ Stanowiska i dodaæ Sk³adniki Wynagrodzenia"
+
+msgid "Grade "
+msgstr "Ranga "
+
+msgid "Please define grade amount for the selected job position first."
+msgstr "Najpierw okre¶l rangê dla wybranego stanowiska."
+
+#, php-format
+msgid "Report %s could not be found."
+msgstr "Raport %s nie istnieje."
+
+msgid "Not set"
+msgstr "Nie ustawione"
+
+msgid "Advance Deduction"
+msgstr "Potr±cenie Zaliczki"
+
+msgid "Company:"
+msgstr "Firma:"
+
+msgid "Phone:"
+msgstr "Numer Telefonu:"
+
+msgid "Employee name"
+msgstr "Nazwisko pracownika"
+
+msgid "Birth date"
+msgstr "Data urodzenia"
+
+msgid "Hired date"
+msgstr "Data zatrudnienia"
+
+msgid "Employees List"
+msgstr "Lista Pracowników"
+
+msgid "No employee filter"
+msgstr "Wszyscy"
+
+msgid "No department filter"
+msgstr "Wszystkie"
+
+msgid "No gender filter"
+msgstr "Bez filtra"
+
+msgid "List of Employees"
+msgstr "Lista Pracowników"
+
+msgid "Orientation"
+msgstr "Orientacja Papieru"
+
+msgid "Leaves"
+msgstr "Uropy"
+
+msgid "Earnings"
+msgstr "Wynagrodzenia"
+
+msgid "Employee:"
+msgstr "Pracownik:"
+
+msgid "Payslip #:"
+msgstr "Pasek nr:"
+
+msgid "ID:"
+msgstr "ID:"
+
+msgid "HRM"
+msgstr "HR"
+
+msgid "Employees by Department"
+msgstr "Prawcownicy wg Oddzia³ów"
+
+msgid "Employees"
+msgstr "Pracownicy"
+
+msgid "Class"
+msgstr "Klasa"
+
+msgid "Employees by Age"
+msgstr "Pacownicy wg wieku"
+
+msgid "Ages"
+msgstr "Wiek"

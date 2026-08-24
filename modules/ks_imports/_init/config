@@ -1,0 +1,11 @@
+Package: ks_imports
+Name: Kosovo Imports
+Description: Blerje nga importi me Supplier Invoice, PO/GRN, stok, DUD, TVSH dhe landed cost.
+Author: Alpatec
+Maintenance: Alpatec
+Homepage: https://tax.alpatec.eu/tax/
+Depends:
+Type: extension
+InstallPath: modules/ks_imports
+Filename: ks_imports-3.0.0-1
+Version: 3.0.0-1
