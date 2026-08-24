@@ -4,7 +4,7 @@ include_once($path_to_root.'/modules/ks_imports/includes/native_import_db.inc');
 
 function ks_import_defaults()
 {
-    return array(
+    return array_merge(array(
         'dud_no' => '',
         'dud_date' => Today(),
         'clearance_date' => Today(),
@@ -20,7 +20,7 @@ function ks_import_defaults()
         'import_vat' => 0,
         'eur1_reference' => '',
         'import_notes' => ''
-    );
+    ), ks_import_payment_split_defaults());
 }
 
 function ks_import_prepare_purchase_entry()
@@ -66,7 +66,7 @@ function ks_import_fill_post()
         'import_vat' => 'ks_import_vat',
         'eur1_reference' => 'ks_eur1_reference',
         'import_notes' => 'ks_import_notes'
-    );
+    ) + ks_import_payment_split_post_map();
     foreach ($map as $key => $post_name) {
         if (!isset($_POST[$post_name])) {
             $_POST[$post_name] = $data[$key];
@@ -102,6 +102,7 @@ function ks_import_display_fields()
     amount_row(_('Baza e TVSH-se ne import:'), 'ks_import_vat_base');
     amount_row(_('TVSH ne import:'), 'ks_import_vat');
     textarea_row(_('Shenime per importin:'), 'ks_import_notes', null, 34, 4, 1000);
+    ks_import_payment_split_display_fields();
     end_outer_table(1);
     display_note(_('Dogana, akciza dhe TVSH-ja regjistrohen ne llogarite perkatese me funksionet standarde te Blerjeve; keto fusha ruajne evidencen ligjore te DUD-it.'), 0, 1);
 }
@@ -123,6 +124,7 @@ function ks_import_store_native_invoice($trans_no, $cart)
     }
     $data = ks_import_post_data();
     ks_import_save_document($trans_no, $cart->supplier_id, $data);
+    ks_import_save_payment_split($trans_no, $cart->supplier_id, $data);
 }
 
 function ks_import_clear_purchase_entry()

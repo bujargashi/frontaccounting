@@ -18,13 +18,16 @@ if (!$row) {
     end_page();
     exit;
 }
+$split = ks_import_get_payment_split($trans_no);
 
 if (isset($_POST['update_import'])) {
     $data = ks_import_post_data();
     if (ks_import_validate_data($data)) {
         ks_import_save_document($trans_no, $row['supplier_id'], $data);
+        ks_import_save_payment_split($trans_no, $row['supplier_id'], $data);
         display_notification(_('Te dhenat e importit u perditesuan.'));
         $row = ks_import_get_document($trans_no);
+        $split = ks_import_get_payment_split($trans_no);
     }
 }
 
@@ -37,11 +40,13 @@ $map = array(
     'customs_duty' => 'ks_customs_duty', 'excise' => 'ks_excise',
     'import_vat_base' => 'ks_import_vat_base', 'import_vat' => 'ks_import_vat',
     'eur1_reference' => 'ks_eur1_reference', 'import_notes' => 'ks_import_notes'
-);
+ ) + ks_import_payment_split_post_map();
+$form_data = array_merge(ks_import_payment_split_defaults(), $row,
+    $split ? $split : array());
 foreach ($map as $field => $post_name) {
     if (!isset($_POST[$post_name])) {
         $_POST[$post_name] = in_array($field, array('dud_date', 'clearance_date'))
-            ? sql2date($row[$field]) : $row[$field];
+            ? sql2date($form_data[$field]) : $form_data[$field];
     }
 }
 
@@ -77,9 +82,26 @@ amount_row(_('Akciza:'), 'ks_excise');
 amount_row(_('Baza e TVSH-se ne import:'), 'ks_import_vat_base');
 amount_row(_('TVSH ne import:'), 'ks_import_vat');
 textarea_row(_('Shenime per importin:'), 'ks_import_notes', null, 34, 4, 1000);
+ks_import_payment_split_display_fields();
 end_outer_table(1);
 submit_center('update_import', _('Perditeso te dhenat e importit'), true, '', 'default');
 end_form();
+
+if ($split) {
+    display_heading(_('Drafti i ndarjes se detyrimeve'));
+    start_table(TABLESTYLE2);
+    label_row(_('Furnitori i mallit:'), $row['supp_name']);
+    label_row(_('Detyrimi i furnitorit:'),
+        price_format($split['goods_amount']).' '.$split['goods_currency']);
+    label_row(_('Shpediteri:'), $split['forwarder_name']);
+    label_row(_('Detyrimi i shpediterit:'),
+        price_format($split['forwarder_amount']).' '.$split['company_currency']);
+    label_row(_('Transportuesi:'), $split['transport_supplier_name']);
+    label_row(_('Detyrimi i transportuesit:'),
+        price_format($split['transport_amount']).' '.$split['company_currency']);
+    label_row(_('Statusi:'), _('Draft - nuk eshte krijuar pagese bankare'));
+    end_table(1);
+}
 
 start_table(TABLESTYLE_NOBORDER);
 start_row();
