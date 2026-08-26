@@ -1,7 +1,5 @@
 <?php
 
-include_once($path_to_root.'/modules/ks_imports/includes/import_payment_split.inc');
-
 function ks_import_user()
 {
     return isset($_SESSION['wa_current_user']->username)
@@ -36,7 +34,7 @@ function ks_import_post_data()
         'import_vat' => ks_import_num('ks_import_vat'),
         'eur1_reference' => trim(get_post('ks_eur1_reference')),
         'import_notes' => trim(get_post('ks_import_notes'))
-    ) + ks_import_payment_split_post_data();
+    );
 }
 
 function ks_import_validate_data($data)
@@ -78,9 +76,6 @@ function ks_import_validate_data($data)
             $ok = false;
             break;
         }
-    }
-    if (!ks_import_payment_split_validate($data)) {
-        $ok = false;
     }
     return $ok;
 }
