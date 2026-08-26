@@ -110,7 +110,17 @@ function ks_import_save_document($trans_no, $supplier_id, $data)
         import_vat_base=VALUES(import_vat_base), import_vat=VALUES(import_vat),
         eur1_reference=VALUES(eur1_reference), import_notes=VALUES(import_notes),
         updated_by=VALUES(updated_by), updated_at=VALUES(updated_at)";
-    db_query($sql, _('Te dhenat e importit nuk mund te ruhen.'));
+    return db_query($sql, _('Te dhenat e importit nuk mund te ruhen.'));
+}
+
+function ks_import_document_exists($trans_no, $supplier_id)
+{
+    $sql = "SELECT id FROM ".TB_PREF."ks_import_documents
+        WHERE trans_type=".ST_SUPPINVOICE.
+        " AND trans_no=".(int)$trans_no.
+        " AND supplier_id=".(int)$supplier_id;
+    $res = db_query($sql, _('Lidhja e importit nuk mund te verifikohet.'));
+    return db_num_rows($res) === 1;
 }
 
 function ks_import_get_document($trans_no)

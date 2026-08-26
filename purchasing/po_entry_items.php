@@ -443,8 +443,6 @@ function handle_commit_order()
 		if ($cart->order_no == 0) { // new po/grn/invoice
 			$trans_no = add_direct_supp_trans($cart);
 			if ($trans_no) {
-				if (function_exists('ks_import_store_native_invoice'))
-					ks_import_store_native_invoice($trans_no, $cart);
 				unset($_SESSION['PO']);
 				if ($cart->trans_type == ST_PURCHORDER)
 	 				meta_forward($_SERVER['PHP_SELF'], "AddedID=$trans_no");

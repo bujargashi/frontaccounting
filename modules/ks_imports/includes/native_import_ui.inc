@@ -119,10 +119,13 @@ function ks_import_validate_purchase()
 function ks_import_store_native_invoice($trans_no, $cart)
 {
     if (!ks_import_is_active() || $cart->trans_type != ST_SUPPINVOICE) {
-        return;
+        return true;
     }
     $data = ks_import_post_data();
-    ks_import_save_document($trans_no, $cart->supplier_id, $data);
+    if (!ks_import_save_document($trans_no, $cart->supplier_id, $data)) {
+        return false;
+    }
+    return ks_import_document_exists($trans_no, $cart->supplier_id);
 }
 
 function ks_import_clear_purchase_entry()
