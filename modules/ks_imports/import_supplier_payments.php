@@ -52,7 +52,8 @@ while ($row = db_fetch_assoc($res)) {
     label_cell("<a class='button' href='../../purchasing/supplier_payment.php?".
         "supplier_id=".(int)$row['supplier_id'].
         "&trans_type=".ST_SUPPINVOICE.
-        "&PInvoice=".(int)$row['trans_no']."'>".
+        "&PInvoice=".(int)$row['trans_no'].
+        "&ImportNet=1'>".
         _('Paguaj').'</a>');
     end_row();
 }

@@ -13,5 +13,5 @@ paralel kontabel.
 
 Pagesat e furnitoreve te importit shfaqin vetem detyrimin neto te faturave
 te lidhura me DUD-in. Fatura, pagesa dhe alokimi postohen nga funksionet
-standarde te FrontAccounting; TVSH-ja e importit nuk i shtohet detyrimit
-ndaj furnitorit te huaj.
+standarde te FrontAccounting; Blerja dhe TVSH-ja postohen pa ndryshim nga FrontAccounting. Faqja e pagesave
+te importit paraqet dhe paracakton vetem detyrimin neto ndaj furnitorit.

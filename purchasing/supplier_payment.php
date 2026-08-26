@@ -74,6 +74,11 @@ if (!isset($_POST['bank_account'])) { // first page call
 			foreach($_SESSION['alloc']->allocs as $line => $trans) {
 				if ($trans->type == $_GET['trans_type'] && $trans->type_no == $_GET['PInvoice']) {
 					$un_allocated = abs($trans->amount) - $trans->amount_allocated;
+					if (!empty($_GET['ImportNet'])) {
+						$net_amount = abs($inv['ov_amount'] + $inv['ov_discount']);
+						$un_allocated = max(0, $net_amount -
+							min($trans->amount_allocated, $net_amount));
+					}
 					$_SESSION['alloc']->amount = $_SESSION['alloc']->allocs[$line]->current_allocated = $un_allocated;
 					$_POST['amount'] = $_POST['amount'.$line] = price_format($un_allocated);
 					break;

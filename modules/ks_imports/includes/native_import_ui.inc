@@ -129,20 +129,3 @@ function ks_import_clear_purchase_entry()
 {
     unset($_SESSION['KS_IMPORT_PURCHASE']);
 }
-
-function ks_import_prepare_supplier_invoice(&$cart)
-{
-    if (!ks_import_is_active() || !isset($cart->trans_type) ||
-        $cart->trans_type != ST_SUPPINVOICE) {
-        return;
-    }
-
-    // Foreign supplier invoices create a net liability. Import VAT remains
-    // documented by the DUD fields and is not charged by the supplier.
-    $cart->tax_included = false;
-    $cart->tax_overrides = array();
-    $taxes = $cart->get_taxes(0, false);
-    foreach ($taxes as $tax_id => $tax) {
-        $cart->tax_overrides[$tax_id] = 0;
-    }
-}

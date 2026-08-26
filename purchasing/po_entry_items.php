@@ -72,9 +72,6 @@ if (isset($_GET['ModifyOrderNumber']) && is_numeric($_GET['ModifyOrderNumber']))
 	}
 }
 
-if (function_exists('ks_import_prepare_supplier_invoice') && isset($_SESSION['PO']))
-	ks_import_prepare_supplier_invoice($_SESSION['PO']);
-
 page($_SESSION['page_title'], false, false, "", $js);
 
 if (isset($_GET['ModifyOrderNumber']))
@@ -442,8 +439,6 @@ function handle_commit_order()
 	if (can_commit()) {
 
 		copy_to_cart();
-		if (function_exists('ks_import_prepare_supplier_invoice'))
-			ks_import_prepare_supplier_invoice($cart);
 		new_doc_date($cart->orig_order_date);
 		if ($cart->order_no == 0) { // new po/grn/invoice
 			$trans_no = add_direct_supp_trans($cart);
