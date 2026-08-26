@@ -221,13 +221,6 @@ function add_direct_supp_trans($cart)
 		update_supp_trans_allocation(ST_SUPPINVOICE, $inv_no, $inv->supplier_id);
 		update_supp_trans_allocation(ST_SUPPAYMENT, $pmt_no, $inv->supplier_id);
 	}
-	// Extension-owned metadata must be saved before the native transaction is
-	// committed. Without the extension this callback is a no-op.
-	if (function_exists('ks_import_store_native_invoice') &&
-		!ks_import_store_native_invoice($inv_no, $cart)) {
-		cancel_transaction();
-		return 0;
-	}
 	commit_transaction(); // save PO+GRN+PI(+SP)
 	return $inv_no;
 }
