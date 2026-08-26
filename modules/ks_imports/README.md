@@ -10,3 +10,8 @@ origjinen, Incoterm-in, kursin dhe vlerat doganore, doganen, akcizen, bazen dhe
 TVSH-ne e importit, EUR.1 dhe kodet tarifore. Te dhenat lidhen me numrin native
 te Supplier Invoice dhe mund te perditesohen e raportohen pa krijuar nje sistem
 paralel kontabel.
+
+Pagesat e furnitoreve te importit shfaqin vetem detyrimin neto te faturave
+te lidhura me DUD-in. Fatura, pagesa dhe alokimi postohen nga funksionet
+standarde te FrontAccounting; TVSH-ja e importit nuk i shtohet detyrimit
+ndaj furnitorit te huaj.

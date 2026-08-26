@@ -29,6 +29,8 @@ class suppliers_app extends application
 
 		$this->add_rapp_function(0, _("&Payments to Suppliers"),
 			"purchasing/supplier_payment.php?", 'SA_SUPPLIERPAYMNT', MENU_TRANSACTION);
+		$this->add_rapp_function(0, _("Pagesat e Furnitoreve nga Importi"),
+			"modules/ks_imports/import_supplier_payments.php", 'SA_SUPPLIERPAYMNT', MENU_TRANSACTION);
 		$this->add_rapp_function(0, "","");
 		$this->add_rapp_function(0, _("Supplier &Invoices"),
 			"purchasing/supplier_invoice.php?New=1", 'SA_SUPPLIERINVOICE', MENU_TRANSACTION);
